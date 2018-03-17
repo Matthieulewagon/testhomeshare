@@ -9,7 +9,7 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '91883a942c0429bc9d3dec0019b10ae2309b110958997b8b82067eeff9c5cc2b62a5a0e1b5e7c45706adf84bcfac0cc5aa33289763d8996209c0d7745a183806'
-  
+
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -210,6 +210,8 @@ Devise.setup do |config|
   # Don't put a too small interval or your users won't have the time to
   # change their passwords.
   config.reset_password_within = 6.hours
+
+  config.secret_key = 'cd12495461e2a35bd7a9366dffd5374ba70789b6f180d890fd6201b071d423e995d5badae9b092e0cfaf92c0b0444b22c26e434ac2aea095416287682e1a16c0'
 
   # When set to false, does not sign a user in automatically after their password is
   # reset. Defaults to true, so a user is signed in automatically after a reset.
