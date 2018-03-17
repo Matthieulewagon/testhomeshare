@@ -1,0 +1,97 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.above-navbar {
+  // position: fixed;
+  height: 126px;
+  width: 100%;
+  background-color: #6b7738;
+}
+
+.above-navbar-phone {
+  height: 80px;
+  background-color: #6b7738;
+}
+
+.welcome-img {
+  margin-top:0px;
+  background-image: image-url('homeshare2.jpg');
+  background-size: cover;
+  min-height: 580px;
+  max-height: 789px;
+}
+
+.welcome-img-phone {
+  margin-top:0px;
+  background-image: image-url('homeshare2.jpg');
+  background-size: cover;
+  // min-height: 580px;
+  max-height: 789px;
+}
+
+.welcome-title-police {
+  margin-top: -3%;
+  margin-left: 43%;
+  font-size: 55px;
+  font-weight: bold;
+  color: #ffffff;
+  // color: #1177ab;
+  text-shadow: 4px 4px #1356bb;
+}
+
+.welcome-title-police-fr {
+  margin-top: -5%;
+  margin-left: 43%;
+  font-size: 55px;
+  font-weight: bold;
+  color: #ffffff;
+  // color: #1177ab;
+  text-shadow: 4px 4px #1356bb;
+}
+
+.welcome-title-police-phone {
+  margin-top: -4%;
+  // margin-left: 43%;
+  font-size: 45px;
+  font-weight: bold;
+  color: #ffffff;
+  // color: #1177ab;
+  text-shadow: 4px 4px #1356bb;
+}
+
+.welcome-title-police-fr-phone {
+  margin-top: -8%;
+  // margin-left: 43%;
+  font-size: 29px;
+  font-weight: bold;
+  color: #ffffff;
+  // color: #1177ab;
+  text-shadow: 4px 4px #1356bb;
+}
+
+.margin-text {
+  margin-top: 500px;
+}
+
+.margin {margin-bottom: 45px;}
+  .bg-2 {
+      background-color: #49a251; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 {
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+
+  .font-size-all {
+    font-size: 16px;
+  }
+

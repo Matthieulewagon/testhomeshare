@@ -1,0 +1,49 @@
+.map-img {
+  margin-top:5px;
+  margin-right: 500px !important;
+  background-image: image-url('map_1toit2age.png') ;
+  height: 635px;
+  width: 1010px;
+  transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+}
+
+.binome_img {
+  margin-top:0px;
+  background-image: image-url('homepage_photo.jpg');
+  background-size: cover;
+  min-height: 580px;
+  max-height: 789px;
+}
+
+.binome_img-phone {
+  margin-top:0px;
+  background-image: image-url('homepage_photo.jpg');
+  background-size: cover;
+  min-height: 226px;
+  max-height: 789px;
+}
+
+.map-img-phone {
+  margin-top:5px;
+  // margin-right: 500px !important;
+  background-image: image-url('map_1toit2age.png');
+  background-size: cover;
+  min-height: 300px;
+  // width: 1010px;
+
+}
+
+.map-title {
+  margin-top: -22%;
+  font-size: 55px;
+  color: #16843a;
+}
+
+.map-title-phone {
+  margin-top: -8%;
+  margin-bottom: -18%;
+  font-size: 34px;
+  color: #16843a;
+}

@@ -1,0 +1,59 @@
+.welcome-above-navbar {
+  height: 126px;
+  background-color: #6e8dba;
+}
+.welcome-above-navbar-phone {
+  height: 80px;
+  background-color: #6e8dba;
+}
+.welcome-bxl-img {
+  margin-top: 0px;
+  background-image: image-url('facades-grand-place-bruxelles.jpg');
+  background-size: cover;
+  min-height: 580px;
+  max-height: 789px;
+  max-width: auto;
+  // height: 580px;
+  filter: grayscale(40%)
+}
+.welcome-bxl-img-phone {
+  margin-top: 0px;
+  background-image: image-url('facades-grand-place-bruxelles.jpg');
+  background-size: cover;
+  // min-height: 580px;
+  max-height: 789px;
+  max-width: auto;
+  // height: 580px;
+  filter: grayscale(40%)
+}
+.welcome-map-img {
+  margin-top:5px;
+  background-image: image-url('maptest1.png');
+  background-size: cover;
+  min-height: 580px;
+  max-height: 789px;
+  max-width: auto;
+}
+.welcome-map-img-phone {
+  margin-top:5px;
+  background-image: image-url('maptest1.png');
+  background-size: cover;
+  min-height: 200px;
+  max-height: 789px;
+  max-width: auto;
+}
+.welcome-title {
+  font-weight: bold;
+  font-size: 80px;
+  color: #ffffff;
+  text-shadow: 4px 4px #1356bb;
+  margin-top: 21.6%;
+}
+
+.welcome-title-phone {
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 4px 4px #1356bb;
+  margin-top: 21.6%;
+}

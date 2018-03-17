@@ -1,0 +1,20 @@
+// Place all the styles related to the speakers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.speakers-img {
+  margin-top:0px;
+  background-image: image-url('coming-soon.png');
+  background-size: cover;
+  min-height: 580px;
+
+  min-height: 1000px;
+}
+
+.speakers-img-phone {
+  margin-top:0px;
+  background-image: image-url('coming-soon.png');
+  background-size: cover;
+  min-height: 370px;
+
+  // min-height: 1000px;
+}

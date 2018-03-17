@@ -1,0 +1,22 @@
+// Place all the styles related to the programme controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.margin-top {
+  margin-top: 77px;
+}
+.hands-img {
+  margin-top:0px;
+  background-image: image-url('mains.jpg');
+  background-size: cover;
+  min-height: 870px;
+  max-height: 1000px;
+}
+
+
+.hands-img-phone {
+  margin-top:0px;
+  background-image: image-url('mains.jpg');
+  background-size: cover;
+  min-height: 300px;
+  max-height: 789px;
+}
