@@ -1,0 +1,2 @@
+module PressAndMediaHelper
+end
