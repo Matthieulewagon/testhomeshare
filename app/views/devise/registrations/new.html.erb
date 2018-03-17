@@ -3,10 +3,10 @@
 <div class="container-fluid text-center font-size-all">
   <div>
     <h3>CONTACT</h3>
-    <p><strong>Homeshare International</strong><br />Elizabeth Mills &ndash;&nbsp;<a href="mailto:Elizabeth@homeshare.org">Elizabeth@homeshare.org</a></p>
+    <p><strong>Homeshare International</strong><br />Elizabeth Mills &ndash;&nbsp;<a class="pink" href="mailto:Elizabeth@homeshare.org">Elizabeth@homeshare.org</a></p>
     <p>&nbsp;</p>
 
-    <p><strong>1TOIT2AGES</strong><br />Claire de Kerautem &ndash;&nbsp;<a href="http://www.1toit2ages.be/fr/accueil.html">worldcongress@1toit2ages.be</a><br />Telephone number: (34) 91 394 6363</p>
+    <p><strong>1TOIT2AGES</strong><br />Claire de Kerautem &ndash;&nbsp;<a class="pink" href="http://www.1toit2ages.be/fr/accueil.html">worldcongress@1toit2ages.be</a><br />Telephone number: (34) 91 394 6363</p>
   </div>
   <p>&nbsp;</p>
 
@@ -20,18 +20,6 @@
   <%= devise_error_messages! %>
 
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
   <div class="form-signin">
     <%= f.label :first_name %><br />
     <%= f.text_field :first_name %>
@@ -81,9 +69,21 @@
     <%= f.check_box :remember_me %>
     <%= f.label :remember_me %>
   </div>
+  <div class="field">
+    <%= f.label :robot? %>
+    <% if @minimum_password_length %>
+    <em>(If you are not a robot type: homeshare)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :type_homeshare %><em> (Type it again*)</em><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Register" %>
   </div>
   <% end %>
   <% end %>
