@@ -8,6 +8,7 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '5.1.5'
 gem 'redis'
+gem 'rails-i18n'
 
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks'
