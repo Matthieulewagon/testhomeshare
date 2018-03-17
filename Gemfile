@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+gssource 'https://rubygems.org'
 ruby '2.5.0'
 
 gem 'devise'
@@ -8,6 +8,7 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '5.1.5'
 gem 'redis'
+
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
