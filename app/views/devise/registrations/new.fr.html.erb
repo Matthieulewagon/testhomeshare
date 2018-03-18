@@ -1,0 +1,160 @@
+<div class=" above-navbar hidden-md hidden-sm hidden-xs text-center">
+  <span class="languages2"><%= link_to "Français", :locale=>'fr'%></span>
+  <span class="languages"><%= link_to "English", :locale=>'en'%></span>
+</div>
+<!-- phonepart -->
+<div class=" above-navbar-phone visible-md visible-sm visible-xs text-center">
+  <span class="languages2-phone"><%= link_to "Français", :locale=>'fr'%></span>
+  <span class="languages"><%= link_to "English", :locale=>'en'%></span>
+</div>
+
+<div class="container-fluid text-center font-size-all">
+  <div>
+    <h3>CONTACT</h3>
+    <p><strong>Homeshare International</strong><br />Elizabeth Mills &ndash;&nbsp;<a class="maile-color" href="mailto:Elizabeth@homeshare.org">Elizabeth@homeshare.org</a></p>
+    <p>&nbsp;</p>
+
+    <p><strong>1TOIT2AGES</strong><br />Claire de Kerautem &ndash;&nbsp;<a class="maile-color" href="http://www.1toit2ages.be/fr/accueil.html">worldcongress@1toit2ages.be</a><br /></p>
+    <p>Num&eacute;ro de t&eacute;l&eacute;phone: 00 32 475 93 28 28</p>
+  </div>
+  <p>&nbsp;</p>
+  <p>FORMULAIRE D'INSCRIPTION (INDIVIDUEL)</p>
+  <p>&nbsp;</p>
+  <div>
+    <p>Veuillez remplir le formulaire en ligne pour vous inscrire au Congr&egrave;s Mondial du Logement qui se tiendra &agrave; :</p>
+    <p>l'Auditorium Chancellerie BNP Paribas Fortis : 1 rue de la Chancellerie &agrave; Bruxelles les 21 et 22 mars 2018.</p>
+  </div>
+  <p>&nbsp;</p>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="form-signin">
+    <%= f.label :prénom %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :nom %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :organisation_or_institution %><br />
+    <%= f.text_field :organisation %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :ville %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state_province_region %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :code_postal_zip %><br />
+    <%= f.text_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :pays %><br />
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+  <div class="field">
+    <%= f.label :telephone %><br />
+    <%= f.text_field :telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :gsm %><br />
+    <%= f.text_field :mobile %>
+  </div>
+  <div class="field">
+    <%= f.label :dietary %><br />
+    <%= f.text_field :dietary %>
+  </div>
+  <div class="field">
+    <%= f.check_box :check %>
+    <%= f.label :check %>
+  </div>
+  <div class="field">
+    <%= f.label :robot? %>
+    <% if @minimum_password_length %>
+    <em>(If you are not a robot type: homeshare)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :type_homeshare %><em> (Type it again*)</em><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <p>Veuillez noter que votre nom, organisation et adresse e-mail seront inclus dans les documents du Congr&egrave;s. Si vous ne souhaitez pas que cette information soit incluse, veuillez nous contacter. De plus, nous prendrons des photos pendant le congr&egrave;s, si vous ne nous permettez pas de publier s'il vous pla&icirc;t contactez-nous.</p>
+  <p>&nbsp;</p>
+  <p>PRIX :</p>
+  <p>&nbsp;</p>
+  <p>Citoyens belges:</p>
+  <p>Congr&egrave;s 2 jours = 50 euros</p>
+  <p>R&eacute;duction pour les membres de 1Toit2Ages, &eacute;tudiants, seniors +65 = 20 euros</p>
+  <p>&nbsp;</p>
+  <p>Membres de Homeshare International:</p>
+  <p>&bull; Congr&egrave;s et cocktail (20/3) + d&icirc;ner (21/3) = 150 euros</p>
+  <p>(Inscription avant le 20 janvier)</p>
+  <p>&bull; Congr&egrave;s et cocktail (20/3) + d&icirc;ner (21/3) = 180 euros</p>
+  <p>(Inscription apr&egrave;s le 20 janvier)</p>
+  <p>&nbsp;</p>
+  <p>Non membres de Homeshare International:</p>
+  <p>&bull; Congr&egrave;s et cocktail (20/3) + d&icirc;ner (21/3) = 170 euros</p>
+  <p>(Inscription avant le 20 janvier)</p>
+  <p>&bull; Congr&egrave;s et cocktail (20/3) + d&icirc;ner (21/3) = 180 euros</p>
+  <p>(Inscription apr&egrave;s le 20 janvier)</p>
+  <p>&nbsp;</p>
+  <p>Si vous &ecirc;tes accompagn&eacute; par un conjoint lors de votre visite &agrave; Bruxelles, il sera le bienvenu au D&icirc;ner de Gala du Congr&egrave;s le 21 mars au soir. Sa participation sera de 50 euros, et peut &ecirc;tre pay&eacute; lors de l'inscription.</p>
+  <p>&nbsp;</p>
+  <p>Si vous êtes membres, cochez la case.</p>
+  <div class="field">
+    <%= f.check_box :members %>
+    <%= f.label :membres %>
+  </div>
+  <p>&nbsp;</p>
+  <p>Mode de participation:</p>
+  <div class="field">
+    <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1Toit2Ages, students, seniors +65 = 20 euros','Congress and cocktail (20/3) + Dinner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 190 euros']%>
+  </div>
+
+  <p>Adresse de facturation si diff&eacute;rente de l'adresse de d&eacute;l&eacute;gu&eacute; ci-dessus:</p>
+  <div class="field">
+    <%= f.label :Completé_nom %><br />
+    <%= f.text_field :friend_name %>
+  </div>
+  <div class="field">
+    <%= f.label :Address %><br />
+    <%= f.text_field :friend_address %>
+  </div>
+  <p>&nbsp;</p>
+  <p>Attention : Les tarifs du congr&egrave;s n'incluent pas l'h&eacute;bergement.</p>
+  <p>&nbsp;</p>
+  <p>Frais d'annulation:</p>
+  <p>&nbsp;</p>
+  <p>Annulations recues avant le 15 f&eacute;vrier 2019 : Remboursement de 75 %</p>
+  <p>Annulations recues jusqu'au 10 mars 2019 : Remboursement de 25%;</p>
+  <p>Aucun remboursement apr&egrave;s le 10 mars .</p>
+  <p>&nbsp;</p>
+  <p>Paiement</p>
+  <p>&nbsp;</p>
+  <p>Merci pour votre paiement sur le compte de l&rsquo;ASBL :</p>
+  <p>&nbsp;</p>
+  <p>ING Bank - 1Toit2Ages</p>
+  <p>&nbsp;</p>
+  <p>IBAN BE39 3630 5564 6819</p>
+  <p>BIC BBRUBEBB</p>
+  <div class="actions">
+    <%= f.submit "Register" %>
+  </div>
+  <% end %>
+</div>

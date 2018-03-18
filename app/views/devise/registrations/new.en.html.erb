@@ -1,4 +1,11 @@
-<div class=" about-above-navbar text-center">
+<div class=" above-navbar hidden-md hidden-sm hidden-xs text-center">
+  <span class="languages2"><%= link_to "Français", :locale=>'fr'%></span>
+  <span class="languages"><%= link_to "English", :locale=>'en'%></span>
+</div>
+<!-- phonepart -->
+<div class=" above-navbar-phone visible-md visible-sm visible-xs text-center">
+  <span class="languages2-phone"><%= link_to "Français", :locale=>'fr'%></span>
+  <span class="languages"><%= link_to "English", :locale=>'en'%></span>
 </div>
 <div class="container-fluid text-center font-size-all">
   <div>
@@ -29,7 +36,7 @@
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
-    <%= f.label :organization_or_institution %><br />
+    <%= f.label :organization_ou_institution %><br />
     <%= f.text_field :organisation %>
   </div>
   <div class="field">
@@ -110,11 +117,13 @@
   <p>&nbsp;</p>
   <p>If you will be accompanied by a spouse or partner on your visit to Brussels, you are welcome to bring them to the Congress Dinner on the evening of 21st March. Please note that the cost for the dinner will be 50 Euros, and can be paid upon registration</p>
   <p>&nbsp;</p>
-  <p>Congress participation mode:</p>
+  <p>Members of the Homeshare International Network may register for the Congress for 150 Euros. Please tick here if you or your organisation are members.</p>
   <div class="field">
     <%= f.check_box :members %>
     <%= f.label :members %>
   </div>
+  <p>&nbsp;</p>
+  <p>Congress participation mode:</p>
   <div class="field">
     <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1Toit2Ages, students, seniors +65 = 20 euros','Congress and cocktail (20/3) + Dinner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 190 euros']%>
   </div>
@@ -122,11 +131,11 @@
 
   <p>Invoice address if different from delegate address above:</p>
   <div class="field">
-    <%= f.label :friend_name %><br />
+    <%= f.label :Complete_name %><br />
     <%= f.text_field :friend_name %>
   </div>
   <div class="field">
-    <%= f.label :friend_address %><br />
+    <%= f.label :Address %><br />
     <%= f.text_field :friend_address %>
   </div>
   <p>&nbsp;</p>
@@ -138,7 +147,6 @@
   <p>no refunds thereafter.</p>
   <p>&nbsp;</p>
   <p>Payment</p>
-  <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>Thanks for your contribution on 1Toit2Ages account:</p>
   <p>&nbsp;</p>
