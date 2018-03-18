@@ -9,12 +9,17 @@
   -webkit-transform: scale(0.5, 0.5);
 }
 
+.padding-img {
+  padding-top: 463px !important;
+  padding-bottom: 0px !important;
+}
+
 .binome_img {
   margin-top:0px;
   background-image: image-url('1toit2_ages_in_belgium.png');
   background-size: cover;
-  min-height: 462px;
-  max-height: 789px;
+  // min-height: 462px;
+  // max-height: 789px;
 }
 
 .binome_img-phone {
