@@ -66,10 +66,10 @@
   </div>
   <div class="field">
     <%= f.label :dietary %><br />
-    <%= f.text_field :country %>
+    <%= f.text_field :dietary %>
   </div>
   <div class="field">
-    <%= f.check_box :remember_me %>
+    <%= f.check_box :check %>
     <%= f.label :check %>
   </div>
   <div class="field">
@@ -112,22 +112,22 @@
   <p>&nbsp;</p>
   <p>Congress participation mode:</p>
   <div class="field">
-    <%= f.check_box :remember_me %>
+    <%= f.check_box :members %>
     <%= f.label :members %>
   </div>
   <div class="field">
-    <%= f.select :telephone, ['Congress 2 days = 50 euros', 'Reduction for members of 1Toit2Ages, students, seniors +65 = 20 euros','Congress and cocktail (20/3) + Dinner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 190 euros']%>
+    <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1Toit2Ages, students, seniors +65 = 20 euros','Congress and cocktail (20/3) + Dinner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 190 euros']%>
   </div>
 
 
   <p>Invoice address if different from delegate address above:</p>
   <div class="field">
-    <%= f.label :name_friend %><br />
-    <%= f.text_field :country %>
+    <%= f.label :friend_name %><br />
+    <%= f.text_field :friend_name %>
   </div>
   <div class="field">
-    <%= f.label :address_friend %><br />
-    <%= f.text_field :country %>
+    <%= f.label :friend_address %><br />
+    <%= f.text_field :friend_address %>
   </div>
   <p>&nbsp;</p>
   <p>The Congress rates do not include accommodation.</p>
