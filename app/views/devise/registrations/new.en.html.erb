@@ -1,4 +1,11 @@
-<div class=" about-above-navbar text-center">
+<div class=" above-navbar hidden-md hidden-sm hidden-xs text-center">
+  <span class="languages2"><%= link_to "Français", :locale=>'fr'%></span>
+  <span class="languages"><%= link_to "English", :locale=>'en'%></span>
+</div>
+<!-- phonepart -->
+<div class=" above-navbar-phone visible-md visible-sm visible-xs text-center">
+  <span class="languages2-phone"><%= link_to "Français", :locale=>'fr'%></span>
+  <span class="languages"><%= link_to "English", :locale=>'en'%></span>
 </div>
 <div class="container-fluid text-center font-size-all">
   <div>
@@ -20,18 +27,6 @@
   <%= devise_error_messages! %>
 
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
   <div class="form-signin">
     <%= f.label :first_name %><br />
     <%= f.text_field :first_name %>
@@ -41,7 +36,7 @@
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
-    <%= f.label :organization_or_institution %><br />
+    <%= f.label :organization_ou_institution %><br />
     <%= f.text_field :organisation %>
   </div>
   <div class="field">
@@ -76,17 +71,28 @@
     <%= f.label :mobile %><br />
     <%= f.text_field :mobile %>
   </div>
-  <% if devise_mapping.rememberable? -%>
   <div class="field">
-    <%= f.check_box :remember_me %>
-    <%= f.label :remember_me %>
+    <%= f.label :dietary %><br />
+    <%= f.text_field :dietary %>
+  </div>
+  <div class="field">
+    <%= f.check_box :check %>
+    <%= f.label :check %>
+  </div>
+  <div class="field">
+    <%= f.label :robot? %>
+    <% if @minimum_password_length %>
+    <em>(If you are not a robot type: homeshare)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="field">
+    <%= f.label :type_homeshare %><em> (Type it again*)</em><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
-  <% end %>
-  <% end %>
+
+
 
 
   <%= render "devise/shared/links" %>
@@ -95,7 +101,6 @@
   <p>Prices</p>
   <p>&nbsp;</p>
   <p>Belgium citizens :</p>
-  <p>&nbsp;</p>
   <p>Congress 2 days = 50 euros</p>
   <p>Reduction for members of 1Toit2Ages, students, seniors +65 = 20 euros</p>
   <p>&nbsp;</p>
@@ -112,7 +117,27 @@
   <p>&nbsp;</p>
   <p>If you will be accompanied by a spouse or partner on your visit to Brussels, you are welcome to bring them to the Congress Dinner on the evening of 21st March. Please note that the cost for the dinner will be 50 Euros, and can be paid upon registration</p>
   <p>&nbsp;</p>
+  <p>Members of the Homeshare International Network may register for the Congress for 150 Euros. Please tick here if you or your organisation are members.</p>
+  <div class="field">
+    <%= f.check_box :members %>
+    <%= f.label :members %>
+  </div>
+  <p>&nbsp;</p>
+  <p>Congress participation mode:</p>
+  <div class="field">
+    <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1Toit2Ages, students, seniors +65 = 20 euros','Congress and cocktail (20/3) + Dinner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 190 euros']%>
+  </div>
+
+
   <p>Invoice address if different from delegate address above:</p>
+  <div class="field">
+    <%= f.label :Complete_name %><br />
+    <%= f.text_field :friend_name %>
+  </div>
+  <div class="field">
+    <%= f.label :Address %><br />
+    <%= f.text_field :friend_address %>
+  </div>
   <p>&nbsp;</p>
   <p>The Congress rates do not include accommodation.</p>
   <p>&nbsp;</p>
@@ -123,11 +148,14 @@
   <p>&nbsp;</p>
   <p>Payment</p>
   <p>&nbsp;</p>
-  <p>&nbsp;</p>
   <p>Thanks for your contribution on 1Toit2Ages account:</p>
   <p>&nbsp;</p>
   <p>IBAN BE39 3630 5564 6819</p>
   <p>BIC BBRUBEBB</p>
+  <div class="actions">
+    <%= f.submit "Register" %>
+  </div>
+  <% end %>
 </div>
 
 
