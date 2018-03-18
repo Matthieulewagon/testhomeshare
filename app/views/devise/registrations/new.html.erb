@@ -91,7 +91,6 @@
   <p>Prices</p>
   <p>&nbsp;</p>
   <p>Belgium citizens :</p>
-  <p>&nbsp;</p>
   <p>Congress 2 days = 50 euros</p>
   <p>Reduction for members of 1Toit2Ages, students, seniors +65 = 20 euros</p>
   <p>&nbsp;</p>
@@ -110,15 +109,19 @@
   <p>&nbsp;</p>
   <p>Congress participation mode:</p>
   <div class="field">
-    <%= f.select :telephone, ['option1', 'option2']%>gs
+    <%= f.select :telephone, ['Congress 2 days = 50 euros', 'Reduction for members of 1Toit2Ages, students, seniors +65 = 20 euros','Congress and cocktail (20/3) + Dinner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 190 euros']%>
   </div>
-  <div class="actions">
-    <%= f.submit "Register" %>
-  </div>
-  <% end %>
-  <% end %>
+
 
   <p>Invoice address if different from delegate address above:</p>
+  <div class="field">
+    <%= f.label :name_friend %><br />
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :address_friend %><br />
+    <%= f.text_field :country %>
+  </div>
   <p>&nbsp;</p>
   <p>The Congress rates do not include accommodation.</p>
   <p>&nbsp;</p>
@@ -134,6 +137,11 @@
   <p>&nbsp;</p>
   <p>IBAN BE39 3630 5564 6819</p>
   <p>BIC BBRUBEBB</p>
+  <div class="actions">
+    <%= f.submit "Register" %>
+  </div>
+  <% end %>
+  <% end %>
 </div>
 
 
