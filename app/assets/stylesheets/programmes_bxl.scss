@@ -1,9 +1,9 @@
 .map-img {
-  margin-top:5px;
-  margin-right: 500px !important;
-  background-image: image-url('map_1toit2age.png') ;
-  height: 635px;
-  width: 1010px;
+  margin-top: -24%;
+  margin-bottom: -23%;
+  background-image: image-url('map1toit2age.jpg') ;
+  min-height: 1280px;
+  background-size: cover;
   transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
   -webkit-transform: scale(0.5, 0.5);
@@ -26,16 +26,17 @@
   margin-top:0px;
   background-image: image-url('1toit2_ages_in_belgium.png');
   background-size: cover;
-  min-height: 144px;
+  min-height: 186px;
   max-height: 789px;
 }
 
 .map-img-phone {
-  margin-top:5px;
+  margin-top: -27%;
+  margin-bottom: -7%;
   // margin-right: 500px !important;
-  background-image: image-url('map_1toit2age.png');
+  background-image: image-url('map1toit2age.jpg');
   background-size: cover;
-  min-height: 300px;
+  min-height: 560px;
   // width: 1010px;
 
 }
