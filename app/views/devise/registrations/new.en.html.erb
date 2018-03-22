@@ -7,7 +7,7 @@
   <span class="languages2-phone"><%= link_to "Français", :locale=>'fr'%></span>
   <span class="languages"><%= link_to "English", :locale=>'en'%></span>
 </div>
-<div class="container-fluid text-center font-size-all">
+<div class="container-fluid text-center font-size-all green">
   <div>
     <h3>CONTACT</h3>
     <p><strong>Homeshare International</strong><br />Elizabeth Mills &ndash;&nbsp;<a class="maile-color" href="mailto:Elizabeth@homeshare.org">Elizabeth@homeshare.org</a></p>
@@ -98,18 +98,19 @@
   <%= render "devise/shared/links" %>
   <p>Please note that your name, organization and email address will be included in the Congress paperwork, If you do not wish this information to be included, please contact us. Moreover, we will take pictures during the congress, if you don&rsquo;t allow us to publish please contact us.</p>
   <p>&nbsp;</p>
-  <p>Prices</p>
+  <u><b><p>Prices</p></b></u>
   <p>&nbsp;</p>
-  <p>Belgium citizens :</p>
+  <u><p>Belgium citizens :</p></u>
   <p>Congress 2 days = 50 euros</p>
   <p>Reduction for members of 1Toit2Ages, students, seniors +65 = 20 euros</p>
   <p>&nbsp;</p>
-  <p>Members of the Homeshare International :</p>
+  <u><p>Members of the Homeshare International :</p></u>
   <p>&middot; Congress and cocktail (20/3) + Dinner de Gala (21/3) = 150 euros</p>
   <p>(Registration before Jan 20th 2019)</p>
   <p>&middot; Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros</p>
   <p>(Registration after Jan 20th 2019)</p>
-  <p>Non members of the Homeshare International :</p>
+  <p>&nbsp;</p>
+  <u><p>Non members of the Homeshare International :</p></u>
   <p>&middot; Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros</p>
   <p>(Registration before Jan 20th 2019)</p>
   <p>&middot; Congress and cocktail (20/3) + Dinner de Gala (21/3) = 190 euros</p>
@@ -123,13 +124,13 @@
     <%= f.label :members %>
   </div>
   <p>&nbsp;</p>
-  <p>Congress participation mode:</p>
+  <b><p>Congress participation mode:</p></b>
   <div class="field">
     <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1Toit2Ages, students, seniors +65 = 20 euros','Congress and cocktail (20/3) + Dinner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 190 euros']%>
   </div>
 
-
-  <p>Invoice address if different from delegate address above:</p>
+  <p>&nbsp;</p>
+  <b><p>Invoice address if different from delegate address above:</p></b>
   <div class="field">
     <%= f.label :Complete_name %><br />
     <%= f.text_field :friend_name %>
@@ -141,15 +142,13 @@
   <p>&nbsp;</p>
   <p>The Congress rates do not include accommodation.</p>
   <p>&nbsp;</p>
-  <p>Cancellation charge:</p>
+  <b><p>Cancellation charge:</p></b>
   <p>Cancellations received before February 15 th 2019 25%;</p>
   <p>Up to 10th March 2019,75%;</p>
   <p>no refunds thereafter.</p>
   <p>&nbsp;</p>
-  <p>Payment</p>
-  <p>&nbsp;</p>
+  <b><p>Payment</p></b>
   <p>Thanks for your contribution on 1Toit2Ages account:</p>
-  <p>&nbsp;</p>
   <p>IBAN BE39 3630 5564 6819</p>
   <p>BIC BBRUBEBB</p>
   <div class="actions">
