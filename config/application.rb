@@ -18,8 +18,6 @@ module Homesharetest2019
     config.load_defaults 5.1
     config.i18n.available_locales = [:en, :fr]
     config.i18n.default_locale = :en
-    config.action_mailer.delivery_method = :postmark
-    config.action_mailer.postmark_settings = { :api_token => "993d15de-cee6-47d4-bdc4-36ff88d16216" }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
