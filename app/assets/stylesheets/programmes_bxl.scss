@@ -16,7 +16,14 @@
 
 .binome_img {
   margin-top:0px;
-  background-image: image-url('1toit2_ages_in_belgium.png');
+  background-image: image-url('binome1.png');
+  background-size: cover;
+  // min-height: 462px;
+  // max-height: 789px;
+}
+.binome_img-fr {
+  margin-top:0px;
+  background-image: image-url('binome1fr.png');
   background-size: cover;
   // min-height: 462px;
   // max-height: 789px;
@@ -24,7 +31,15 @@
 
 .binome_img-phone {
   margin-top:0px;
-  background-image: image-url('1toit2_ages_in_belgium.png');
+  background-image: image-url('binome1.png');
+  background-size: cover;
+  min-height: 140px;
+  max-height: 789px;
+}
+
+.binome_img-phone-fr {
+  margin-top:0px;
+  background-image: image-url('binome1fr.png');
   background-size: cover;
   min-height: 140px;
   max-height: 789px;
