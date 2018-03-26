@@ -25,9 +25,17 @@
 
 .hands-img-phone {
   margin-top:0px;
-  background-image: image-url('mains.jpg');
+  background-image: image-url('program.jpg');
   background-size: cover;
-  min-height: 300px;
+  min-height: 181px;
+  max-height: 789px;
+}
+
+.hands-img-phone-fr {
+  margin-top:0px;
+  background-image: image-url('programfr.jpg');
+  background-size: cover;
+  min-height: 179px;
   max-height: 789px;
 }
 

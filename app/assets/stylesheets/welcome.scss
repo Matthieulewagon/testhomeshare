@@ -32,14 +32,26 @@
 
 .welcome-bxl-img-phone {
   margin-top: 0px;
-  background-image: image-url('facades-grand-place-bruxelles.jpg');
+  background-image: image-url('welcome.jpg');
   background-size: cover;
-  // min-height: 580px;
+  min-height: 181px;
   max-height: 789px;
   max-width: auto;
   // height: 580px;
   filter: grayscale(40%)
 }
+
+.welcome-bxl-img-phone-fr {
+  margin-top: 0px;
+  background-image: image-url('welcomefr.jpg');
+  background-size: cover;
+  min-height: 179px;
+  max-height: 789px;
+  max-width: auto;
+  // height: 580px;
+  filter: grayscale(40%)
+}
+
 .welcome-map-img {
   margin-top:5px;
   background-image: image-url('maptest1.png');

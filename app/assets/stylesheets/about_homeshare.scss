@@ -22,9 +22,17 @@
 
 .about-img-phone {
   margin-top:0px;
-  background-image: image-url('homeshare1.JPG');
+  background-image: image-url('abouthomeshare.jpg');
   background-size: cover;
-  // min-height: 580px;
+  min-height: 181px;
+  max-height: 789px;
+}
+
+.about-img-phone-fr {
+  margin-top:0px;
+  background-image: image-url('abouthomesharefr.jpg');
+  background-size: cover;
+  min-height: 179px;
   max-height: 789px;
 }
 
