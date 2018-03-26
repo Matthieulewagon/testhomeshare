@@ -119,6 +119,11 @@
       padding-bottom: 110px;
   }
 
+  .container-sponsors-phone {
+      padding-top: 10px;
+      padding-bottom: 38px;
+  }
+
 .sponsor1-img {
   background-image: image-url('Sponsor1.png');
   background-size: cover;
@@ -176,6 +181,66 @@
 .sponsor4-height {
   margin-left: 4% !important;
   height: 100px !important;
+  width: 15.7% !important;
+}
+
+.sponsor1-img-phone {
+  background-image: image-url('Sponsor1.png');
+  background-size: cover;
+  height: 10%;
+  width: 5%;
+  margin-left: 20px !important;
+  // -webkit-transform: scale(0.5, 0.5);
+}
+
+.sponsor2-img-phone {
+  background-image: image-url('Sponsor2.png');
+  background-size: cover;
+  height: 10%;
+  width: 5%;
+  margin-left: 20px !important;
+  // -webkit-transform: scale(0.6, 0.6);
+}
+
+.sponsor3-img-phone {
+  background-image: image-url('Sponsor3.png');
+  background-size: cover;
+  height: 10%;
+  width: 5%;
+  margin-left: 20px !important;
+  // -webkit-transform: scale(0.6, 0.6);
+}
+
+.sponsor4-img-phone {
+  background-image: image-url('Sponsor4.png');
+  background-size: cover;
+  height: 10%;
+  width: 5%;
+  margin-left: 20px !important;
+  // -webkit-transform: scale(0.95, 0.95);
+}
+
+.sponsor1-height-phone {
+  margin-left: 4% !important;
+  height: 30px !important;
+  width: 19% !important;
+}
+
+.sponsor2-height-phone {
+  margin-left: 4% !important;
+  height: 30px !important;
+  width: 15% !important;
+}
+
+.sponsor3-height-phone {
+  margin-left: 4% !important;
+  height: 30px !important;
+  width: 28% !important;
+}
+
+.sponsor4-height-phone {
+  margin-left: 4% !important;
+  height: 30px !important;
   width: 15.7% !important;
 }
 
