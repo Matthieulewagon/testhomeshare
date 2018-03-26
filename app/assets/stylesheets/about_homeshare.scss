@@ -5,9 +5,18 @@
 .about-img {
   margin-top:0px;
   // background-image: image-url('homeshare1.JPG');
-  background-image: image-url('Testtaille.jpg');
+  background-image: image-url('abouthomeshare.jpg');
   background-size: cover;
-  min-height: 575px;
+  min-height: 565px;
+  max-height: 789px;
+}
+
+.about-img-fr {
+  margin-top:0px;
+  // background-image: image-url('homeshare1.JPG');
+  background-image: image-url('abouthomesharefr.jpg');
+  background-size: cover;
+  min-height: 565px;
   max-height: 789px;
 }
 
