@@ -30,51 +30,51 @@
 
   <div class="form-signin">
     <%= f.label :prénom %><br />
-    <%= f.text_field :first_name %>
+    <%= f.text_field :first_name, class: 'form-input' %>
   </div>
   <div class="field">
     <%= f.label :nom %><br />
-    <%= f.text_field :last_name %>
+    <%= f.text_field :last_name, class: 'form-input' %>
   </div>
   <div class="field">
     <%= f.label :organisation_or_institution %><br />
-    <%= f.text_field :organisation %>
+    <%= f.text_field :organisation, class: 'form-input' %>
   </div>
   <div class="field">
     <%= f.label :address %><br />
-    <%= f.text_field :address %>
+    <%= f.text_field :address, class: 'form-input' %>
   </div>
   <div class="field">
     <%= f.label :ville %><br />
-    <%= f.text_field :city %>
+    <%= f.text_field :city, class: 'form-input' %>
   </div>
   <div class="field">
     <%= f.label :state_province_region %><br />
-    <%= f.text_field :state %>
+    <%= f.text_field :state, class: 'form-input' %>
   </div>
   <div class="field">
     <%= f.label :code_postal_zip %><br />
-    <%= f.text_field :zip %>
+    <%= f.text_field :zip, class: 'form-input' %>
   </div>
   <div class="field">
     <%= f.label :pays %><br />
-    <%= f.text_field :country %>
+    <%= f.text_field :country, class: 'form-input' %>
   </div>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autocomplete: "email", class: 'form-input' %>
   </div>
   <div class="field">
     <%= f.label :telephone %><br />
-    <%= f.text_field :telephone %>
+    <%= f.text_field :telephone, class: 'form-input' %>
   </div>
   <div class="field">
     <%= f.label :gsm %><br />
-    <%= f.text_field :mobile %>
+    <%= f.text_field :mobile, class: 'form-input' %>
   </div>
   <div class="field">
     <%= f.label :dietary %><br />
-    <%= f.text_field :dietary %>
+    <%= f.text_field :dietary, class: 'form-input' %>
   </div>
 
   <p>&nbsp;</p>
@@ -114,11 +114,11 @@
   <u><p>Adresse de facturation si diff&eacute;rente de l'adresse de d&eacute;l&eacute;gu&eacute; ci-dessus:</p></u>
   <div class="field">
     <%= f.label :Completé_nom %><br />
-    <%= f.text_field :friend_name %>
+    <%= f.text_field :friend_name, class: 'form-input' %>
   </div>
   <div class="field">
     <%= f.label :Address %><br />
-    <%= f.text_field :friend_address %>
+    <%= f.text_field :friend_address, class: 'form-input' %>
   </div>
   <p>&nbsp;</p>
   <p>Attention : Les tarifs du congr&egrave;s n'incluent pas l'h&eacute;bergement.</p>
