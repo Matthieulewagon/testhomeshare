@@ -125,7 +125,7 @@
   }
 
 .sponsor1-img {
-  background-image: image-url('Sponsor1.png');
+  background-image: image-url('Sponsor5.png');
   background-size: cover;
   height: 10%;
   width: 5%;
@@ -160,37 +160,52 @@
   -webkit-transform: scale(0.65, 0.65);
 }
 
+.sponsor5-img {
+  background-image: image-url('Sponsor6.jpg');
+  background-size: cover;
+  height: 10%;
+  width: 5%;
+  margin-left: 20px !important;
+  -webkit-transform: scale(0.65, 0.65);
+}
+
 .sponsor1-height {
-  margin-left: 4% !important;
+  margin-left: -2% !important;
   height: 100px !important;
-  width: 19% !important;
+  width: 33% !important;
 }
 
 .sponsor2-height {
-  margin-left: 4% !important;
+  margin-left: -3% !important;
   height: 100px !important;
   width: 15% !important;
 }
 
 .sponsor3-height {
-  margin-left: 4% !important;
+  margin-left: -3% !important;
   height: 105px !important;
   width: 29% !important;
 }
 
 .sponsor4-height {
-  margin-left: 4% !important;
+  margin-left: -3% !important;
+  height: 100px !important;
+  width: 15.7% !important;
+}
+
+.sponsor5-height {
+  margin-left: 1% !important;
   height: 100px !important;
   width: 15.7% !important;
 }
 
 .sponsor1-img-phone {
-  background-image: image-url('Sponsor1.png');
+  background-image: image-url('Sponsor5.png');
   background-size: cover;
   height: 10%;
   width: 5%;
   margin-left: 20px !important;
-  // -webkit-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
 }
 
 .sponsor2-img-phone {
@@ -199,7 +214,7 @@
   height: 10%;
   width: 5%;
   margin-left: 20px !important;
-  // -webkit-transform: scale(0.6, 0.6);
+  -webkit-transform: scale(0.6, 0.6);
 }
 
 .sponsor3-img-phone {
@@ -208,7 +223,7 @@
   height: 10%;
   width: 5%;
   margin-left: 20px !important;
-  // -webkit-transform: scale(0.6, 0.6);
+  -webkit-transform: scale(0.6, 0.6);
 }
 
 .sponsor4-img-phone {
@@ -217,29 +232,44 @@
   height: 10%;
   width: 5%;
   margin-left: 20px !important;
-  // -webkit-transform: scale(0.95, 0.95);
+  -webkit-transform: scale(0.7, 0.7);
+}
+
+.sponsor5-img-phone {
+  background-image: image-url('Sponsor6.jpg');
+  background-size: cover;
+  height: 10%;
+  width: 5%;
+  margin-left: 20px !important;
+  -webkit-transform: scale(0.7, 0.7);
 }
 
 .sponsor1-height-phone {
-  margin-left: 4% !important;
+  margin-left: -3% !important;
   height: 30px !important;
-  width: 19% !important;
+  width: 31% !important;
 }
 
 .sponsor2-height-phone {
-  margin-left: 4% !important;
+  margin-left: -3% !important;
   height: 30px !important;
   width: 15% !important;
 }
 
 .sponsor3-height-phone {
-  margin-left: 4% !important;
+  margin-left: -3% !important;
   height: 30px !important;
   width: 28% !important;
 }
 
 .sponsor4-height-phone {
-  margin-left: 4% !important;
+  margin-left: -2% !important;
+  height: 30px !important;
+  width: 15.7% !important;
+}
+
+.sponsor5-height-phone {
+  margin-left: 0% !important;
   height: 30px !important;
   width: 15.7% !important;
 }
