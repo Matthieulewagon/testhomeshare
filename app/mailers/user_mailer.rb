@@ -7,8 +7,9 @@ class UserMailer < ApplicationMailer
   #
   def welcome(user)
     @user = user  # Instance variable => available in view
+    @users = [@user.email, "matthieulombard@1toit2ages.be"]
 
-    mail(to: @user.email, subject: 'Confirmation: You are registered')
+    mail(to: @users, subject: 'Homesharecongress2019, Confirmation: You are registered')
     # This will render a view in `app/views/user_mailer`!
   end
 end
