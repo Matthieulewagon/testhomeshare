@@ -9,8 +9,14 @@
     <li><%=link_to "1toit2ages en Belgique",programmes_bxl_show_path, class: "navbar-brand"%></li>
     <li><%=link_to "Bienvenue à Bruxelles",welcome_show_path, class: "navbar-brand"%></a></li>
     <li class="active"><%=link_to "Accueil",root_path, class: "navbar-brand"%></li>
-
+    <% if !user_signed_in? %>
     <li><%=link_to "Contact et Inscription",new_user_registration_path, class: "button-nav navbar-margin-right"%></a></li>
+    <% end %>
+    <% if user_signed_in? %>
+    <li>
+      <%= link_to 'Contact et Inscription', destroy_user_session_path, method: :delete, class: "button-nav navbar-margin-right"  %>
+    </li>
+    <% end %>
     <li><%=link_to "Programme",programme_show_path, class: "navbar-brand"%></a></li>
     <li><%=link_to "Intervenants",speakers_show_path, class: "navbar-brand"%></a></li>
     </ul>
