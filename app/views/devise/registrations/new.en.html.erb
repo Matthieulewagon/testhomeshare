@@ -79,18 +79,7 @@
     <%= f.check_box :check %>
     <%= f.label :check %>
   </div>
-  <div class="field">
-    <%= f.label :robot? %>
-    <% if @minimum_password_length %>
-    <em>(If you are not a robot type: homeshare)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
 
-  <div class="field">
-    <%= f.label :type_homeshare %><em> (Type it again*)</em><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
 
 
   <p>Please note that your name, organization and email address will be included in the Congress paperwork, If you do not wish this information to be included, please contact us. Moreover, we will take pictures during the congress, if you don&rsquo;t allow us to publish please contact us.</p>
