@@ -15,13 +15,12 @@
     <p>&nbsp;</p>
 
     <p><strong>1TOIT2AGES</strong><br />Claire de Kerautem &ndash;&nbsp;<a class="maile-color" href="http://www.1toit2ages.be/fr/accueil.html">worldcongress@1toit2ages.be</a><br /></p>
-    <p>Num&eacute;ro de t&eacute;l&eacute;phone: 00 32 475 93 28 28</p>
   </div>
   <p>&nbsp;</p>
   <b><p>FORMULAIRE D'INSCRIPTION (INDIVIDUEL)</p></b>
   <div>
-    <p>Veuillez remplir le formulaire en ligne pour vous inscrire au Congr&egrave;s Mondial du Logement qui se tiendra &agrave; :</p>
-    <p>l'Auditorium Chancellerie BNP Paribas Fortis : 1 rue de la Chancellerie &agrave; Bruxelles les 21 et 22 mars 2018.</p>
+    <p>Veuillez remplir le formulaire en ligne pour vous inscrire au Congr&egrave;s Mondial du Logement Intergénérationnel qui se tiendra à</p>
+    <p>l'Auditorium Chancellerie BNP Paribas Fortis, 1, rue de la Chancellerie &agrave; Bruxelles les 21 et 22 mars 2018.</p>
   </div>
   <p>&nbsp;</p>
 
@@ -37,11 +36,11 @@
     <%= f.text_field :last_name, class: 'form-input' %>
   </div>
   <div class="field">
-    <%= f.label :organisation_or_institution %><br />
+    <%= f.label :organisation_ou_institution %><br />
     <%= f.text_field :organisation, class: 'form-input' %>
   </div>
   <div class="field">
-    <%= f.label :address %><br />
+    <%= f.label :adresse %><br />
     <%= f.text_field :address, class: 'form-input' %>
   </div>
   <div class="field">
@@ -49,7 +48,7 @@
     <%= f.text_field :city, class: 'form-input' %>
   </div>
   <div class="field">
-    <%= f.label :state_province_region %><br />
+    <%= f.label :région_Province %><br />
     <%= f.text_field :state, class: 'form-input' %>
   </div>
   <div class="field">
@@ -65,26 +64,26 @@
     <%= f.email_field :email, autocomplete: "email", class: 'form-input' %>
   </div>
   <div class="field">
-    <%= f.label :telephone %><br />
+    <%= f.label :téléphone %><br />
     <%= f.text_field :telephone, class: 'form-input' %>
   </div>
   <div class="field">
-    <%= f.label :gsm %><br />
+    <%= f.label :mobile %><br />
     <%= f.text_field :mobile, class: 'form-input' %>
   </div>
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :dietary %><br />
     <%= f.text_field :dietary, class: 'form-input' %>
-  </div>
+  </div> -->
 
   <p>&nbsp;</p>
-  <p>Veuillez noter que votre nom, organisation et adresse e-mail seront inclus dans les documents du Congr&egrave;s. Si vous ne souhaitez pas que cette information soit incluse, veuillez nous contacter. De plus, nous prendrons des photos pendant le congr&egrave;s, si vous ne nous permettez pas de publier s'il vous pla&icirc;t contactez-nous.</p>
+  <p>Veuillez noter que votre nom, organisation et adresse e-mail seront inclus dans les documents du Congr&egrave;sn et que des photos seront prises pendant le congrès sauf demande particulière de votre part.</p>
   <p>&nbsp;</p>
   <b><u><p>PRIX :</p></u></b>
   <p>&nbsp;</p>
   <u><p>Citoyens belges:</p></u>
   <p>Congr&egrave;s 2 jours = 50 euros</p>
-  <p>R&eacute;duction pour les membres de 1Toit2Ages, &eacute;tudiants, seniors +65 = 20 euros</p>
+  <p>R&eacute;duction pour les membres de 1Toit2Ages, &eacute;tudiants, seniors +65 = 25 euros</p>
   <p>&nbsp;</p>
   <u><p>Membres de Homeshare International:</p></u>
   <p>&bull; Congr&egrave;s et cocktail (20/3) + d&icirc;ner (21/3) = 150 euros</p>
@@ -98,7 +97,7 @@
   <p>&bull; Congr&egrave;s et cocktail (20/3) + d&icirc;ner (21/3) = 180 euros</p>
   <p>(Inscription apr&egrave;s le 20 janvier)</p>
   <p>&nbsp;</p>
-  <p>Si vous &ecirc;tes accompagn&eacute; par un conjoint lors de votre visite &agrave; Bruxelles, il sera le bienvenu au D&icirc;ner de Gala du Congr&egrave;s le 21 mars au soir. Sa participation sera de 50 euros, et peut &ecirc;tre pay&eacute; lors de l'inscription.</p>
+  <p>Si vous &ecirc;tes accompagn&eacute;, cette personne sera la bienvenue au D&icirc;ner de Gala du Congr&egrave;s le 21 mars au soir. Sa participation sera de 50 euros, à payer lors de l'inscription.</p>
   <p>&nbsp;</p>
   <u><p>Si vous êtes membres, cochez la case.</p></u>
   <div class="field">
@@ -114,17 +113,17 @@
     <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1Toit2Ages, students, seniors +65 = 20 euros','Congress and cocktail (20/3) + Dinner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 190 euros']%>
   </div>
   <p>&nbsp;</p>
-  <u><p>Adresse de facturation si diff&eacute;rente de l'adresse de d&eacute;l&eacute;gu&eacute; ci-dessus:</p></u>
+  <u><p>Adresse de facturation (si différente) </p></u>
   <div class="field">
-    <%= f.label :Completez_nom %><br />
+    <%= f.label :Nom %><br />
     <%= f.text_field :friend_name, class: 'form-input' %>
   </div>
   <div class="field">
-    <%= f.label :Address %><br />
+    <%= f.label :Adresse %><br />
     <%= f.text_field :friend_address, class: 'form-input' %>
   </div>
   <p>&nbsp;</p>
-  <p>Attention : Les tarifs du congr&egrave;s n'incluent pas l'h&eacute;bergement.</p>
+  <p>Attention : Ces tarifs n'incluent pas l'h&eacute;bergement.</p>
   <p>&nbsp;</p>
   <u><p>Frais d'annulation:</p></u>
   <p>&nbsp;</p>
@@ -138,7 +137,7 @@
   <p>IBAN BE39 3630 5564 6819</p>
   <p>BIC BBRUBEBB</p>
   <div class="actions">
-    <%= f.submit "Register", :class => 'button-register' %>
+    <%= f.submit "Enregistrement", :class => 'button-register' %>
   </div>
   <% end %>
 </div>
