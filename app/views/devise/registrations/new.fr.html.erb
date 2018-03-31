@@ -18,10 +18,12 @@
     </div>
     <p>&nbsp;</p>
     <b><h2>FORMULAIRE D'INSCRIPTION (INDIVIDUEL)</h2></b>
+  </div>
     <div>
-      <p class="margin-text-about">Veuillez remplir le formulaire en ligne pour vous inscrire au Congr&egrave;s Mondial du Logement Intergénérationnel qui se tiendra à l'Auditorium Chancellerie BNP Paribas Fortis, 1, rue de la Chancellerie &agrave; Bruxelles les 21 et 22 mars 2018.</p>
+      <p class="margin-text-about">Veuillez remplir le formulaire en ligne pour vous inscrire au Congr&egrave;s Mondial du Logement Intergénérationnel qui se tiendra à l'Auditorium Chancellerie BNP Paribas Fortis, <b>1, rue de la Chancellerie &agrave; Bruxelles les 21 et 22 mars 2018.</b></p>
     </div>
     <p>&nbsp;</p>
+    <div class="text-center">
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
@@ -78,12 +80,12 @@
   <p>&nbsp;</p>
 </div>
 <div class="margin-text-about">
-<p>Veuillez noter que votre nom, organisation et adresse e-mail seront inclus dans les documents du Congr&egrave;sn et que des photos seront prises pendant le congrès sauf demande particulière de votre part.</p>
+<p>Veuillez noter que votre nom, organisation et adresse e-mail seront inclus dans les documents du Congr&egrave;s et que des photos seront prises pendant le congrès sauf demande particulière de votre part.</p>
 <p>&nbsp;</p>
 <b><h3 class="padding-register">PRIX </h3></b>
 <p class="font-size-welcome-intertitle">Citoyens belges</p>
 <p>Congr&egrave;s 2 jours = 50 euros</p>
-<p>R&eacute;duction pour les membres de 1Toit2Ages, &eacute;tudiants, seniors +65 = 25 euros</p>
+<p>R&eacute;duction pour les membres de 1toit2ages, &eacute;tudiants, seniors +65 = 25 euros</p>
 <p>&nbsp;</p>
 <p class="font-size-welcome-intertitle">Membres de Homeshare International</p>
 <p>&bull; Congr&egrave;s et cocktail (20/3) + d&icirc;ner (21/3) = 150 euros</p>
@@ -92,9 +94,9 @@
 <p>(Inscription apr&egrave;s le 20 janvier)</p>
 <p>&nbsp;</p>
 <p class="font-size-welcome-intertitle">Non membres de Homeshare International</p>
-<p>&bull; Congr&egrave;s et cocktail (20/3) + d&icirc;ner (21/3) = 170 euros</p>
+<p>&bull; Congr&egrave;s + d&icirc;ner (21/3) = 170 euros</p>
 <p>(Inscription avant le 20 janvier)</p>
-<p>&bull; Congr&egrave;s et cocktail (20/3) + d&icirc;ner (21/3) = 180 euros</p>
+<p>&bull; Congr&egrave;s + d&icirc;ner (21/3) = 180 euros</p>
 <p>(Inscription apr&egrave;s le 20 janvier)</p>
 <p>&nbsp;</p>
 <p>Si vous &ecirc;tes accompagn&eacute;, cette personne sera la bienvenue au D&icirc;ner de Gala du Congr&egrave;s le 21 mars au soir. Sa participation sera de 50 euros, à payer lors de l'inscription.</p>
@@ -108,10 +110,10 @@
 <div class="text-center">
 <b><p>Mode de participation</p></b>
 <div class="field hidden-xs">
-  <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1toit2ages, students, seniors +65 = 20 euros','Congress and cocktail (20/3) + Dinner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 190 euros']%>
+  <%= f.select :prices, ['Congrès 2 jours = 50 euros', 'Réduction pour les membres de 1toit2ages, étudiants, seniors +65 = 25 euros',' Congrès et cocktail (20/3) + dîner (21/3) = 150 euros', 'Congrès et cocktail (20/3) + dîner (21/3) = 180 euros', 'Congrès + dîner (21/3) = 170 euros', 'Congrès + dîner (21/3) = 180 euros']%>
 </div>
 <div class="field form-font-size visible-xs">
-  <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1toit2ages, students, seniors +65 = 20 euros','Congress and cocktail (20/3) + Dinner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 170 euros', 'Congress and cocktail (20/3) + Dinner de Gala (21/3) = 190 euros']%>
+  <%= f.select :prices, ['Congrès 2 jours = 50 euros', 'Réduction pour les membres de 1toit2ages, étudiants, seniors +65 = 25 euros',' Congrès et cocktail (20/3) + dîner (21/3) = 150 euros', 'Congrès et cocktail (20/3) + dîner (21/3) = 180 euros', 'Congrès + dîner (21/3) = 170 euros', 'Congrès + dîner (21/3) = 180 euros']%>
 </div>
 <p>&nbsp;</p>
 <b><p>Adresse de facturation (si différente) </p></b>
