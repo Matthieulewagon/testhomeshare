@@ -8,7 +8,7 @@
     <li><%=link_to "Logement Intergénérationnel",about_homeshare_show_path, class: "navbar-brand"%></a></li>
     <li><%=link_to "1toit2ages en Belgique",programmes_bxl_show_path, class: "navbar-brand"%></li>
     <li><%=link_to "Bienvenue à Bruxelles",welcome_show_path, class: "navbar-brand"%></a></li>
-    <li class="active"><%=link_to "Accueil",root_path, class: "navbar-brand"%></li>
+    <li><%=link_to "Accueil",root_path, class: "navbar-brand"%></li>
     <% if !user_signed_in? %>
     <li><%=link_to "Contact et Inscription",new_user_registration_path, class: "button-nav navbar-margin-right"%></a></li>
     <% end %>
