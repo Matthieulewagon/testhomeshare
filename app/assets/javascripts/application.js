@@ -37,3 +37,5 @@ window.onclick = function(event) {
     }
   }
 }
+
+$("a[href*='" + location.pathname + "']").addClass("current");
