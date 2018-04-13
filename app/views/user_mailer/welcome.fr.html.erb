@@ -1,13 +1,23 @@
-<p>Bonjour <%= @user.first_name %>,</p>
 
-<p>Félicitations, votre demande d'inscription a bien été enregistrée!</p>
-
-<p><%= @user.first_name %>, vous avez choisi l'option :<%= @user.prices %></p>
-<b><p>Paiement</p></b>
+<p class="x_MsoNormal">Cher Participant,</p>
+<p class="x_MsoNormal">&nbsp;</p>
+<p class="x_MsoNormal">Merci pour votre inscription au 6<sup>&egrave;me</sup>&nbsp;Congr&egrave;s du Logement Interg&eacute;n&eacute;rationnel qui se d&eacute;roulera les 21 et 22 mars 2019 &agrave; Bruxelles.</p>
+<p class="x_MsoNormal">Votre participation sera confirm&eacute;e apr&egrave;s r&eacute;ception de votre paiement.</p>
+<p class="x_MsoNormal">&nbsp;</p>
+<p class="x_MsoNormal">D&rsquo;autres informations vous parviendront ult&eacute;rieurement, mais pour toute question n&rsquo;h&eacute;sitez pas &agrave; nous contacter.</p>
+<p class="x_MsoNormal">&nbsp;</p>
+<p class="x_MsoNormal">Nous nous r&eacute;jouissons de vous accueillir &agrave; Bruxelles&nbsp;!</p>
+<p class="x_MsoNormal">&nbsp;</p>
+<p><%= @user.first_name %>, vous avez choisi l'option : <%= @user.prices %></p>
+<p>&nbsp;</p>
+<p>Paiement</p>
 <u><p>Merci pour votre paiement sur le compte de l&rsquo;ASBL :</p></u>
 <p>ING Bank - 1Toit2Ages</p>
 <p>IBAN BE39 3630 5564 6819</p>
 <p>BIC BBRUBEBB</p>
+<p>&nbsp;</p>
+<b><p class="x_MsoNormal">L&rsquo;&eacute;quipe du Congrès</p></b>
+
 
 <p>&nbsp;</p>
 <p><%= @user.first_name %> <%= @user.last_name %></p>
@@ -16,11 +26,10 @@
 <p>ville: <%= @user.city %></p>
 <p>state: <%= @user.state %></p>
 <p>zip: <%= @user.zip %></p>
-<p>country: <%= @user.pays %></p>
+<p>country: <%= @user.country %></p>
 <p>email: <%= @user.email %></p>
 <p>telephone: <%= @user.telephone %></p>
 <p>mobile: <%= @user.mobile %></p>
-<p>dietary: <%= @user.dietary %></p>
 <p>member: <%= @user.members %></p>
 <p>+1: <%= @user.friend_name %></p>
 <p>+1 address: <%= @user.friend_address %></p>

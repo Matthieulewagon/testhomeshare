@@ -1,25 +1,26 @@
-<b><p>Hi <%= @user.first_name %>,</p></b>
 
 <p class="x_MsoNormal"><em>Dear participant,</em></p>
-<p class="x_MsoNormal"><em>&nbsp;</em></p>
+<p>&nbsp;</p>
 <p class="x_MsoNormal"><em>Thank you for participating in the 6th World Homeshare International Congress, on March 21st &amp; 22nd in Brussels.</em></p>
 <p class="x_MsoNormal"><em>&nbsp;</em></p>
 <p class="x_MsoNormal"><em>Your registration will be confirmed as soon as your paiement is received.</em></p>
-<p><%= @user.first_name %>, you have chosen the option :<%= @user.prices %></p>
-<b><p>Payment</p></b>
-<p>Thanks for your contribution on 1Toit2Ages account:</p>
-<p>IBAN BE39 3630 5564 6819</p>
-<p>BIC BBRUBEBB</p>
 <p>&nbsp;</p>
 <p class="x_MsoNormal"><em>We will send you soon some useful information for your arrival at the Congress.</em></p>
 <p class="x_MsoNormal"><em>&nbsp;</em></p>
 <p class="x_MsoNormal"><em>In the meantime, please do not hesitate to contact us if you need any guidance or assistance.</em></p>
 <p class="x_MsoNormal"><em>&nbsp;</em></p>
 <p class="x_MsoNormal"><em>We look forward to seeing you in Brussels.</em></p>
-<p class="x_MsoNormal"><em>&nbsp;</em></p>
-<p class="x_MsoNormal"><em>Best regards,</em></p>
 <p class="x_MsoNormal">&nbsp;</p>
+<p><%= @user.first_name %>, you have chosen the option : <%= @user.prices %></p>
+<p>&nbsp;</p>
+<p>Payment</p>
+<p>Thanks for your contribution on 1Toit2Ages account:</p>
+<p>IBAN BE39 3630 5564 6819</p>
+<p>BIC BBRUBEBB</p>
+<p>&nbsp;</p>
+<p class="x_MsoNormal"><em>Best regards,</em></p>
 <p class="x_MsoNormal"><strong>The Congress team</strong></p>
+<p>&nbsp;</p>
 
 <p>Here are your informations (if there is somthing wrong please tell us at this address : matthieulombard@1toit2ages.be) :</p>
 <p><%= @user.first_name %> <%= @user.last_name %></p>
@@ -32,7 +33,6 @@
 <p>email: <%= @user.email %></p>
 <p>telephone: <%= @user.telephone %></p>
 <p>mobile: <%= @user.mobile %></p>
-<p>dietary: <%= @user.dietary %></p>
 <p>member: <%= @user.members %></p>
 <p>+1: <%= @user.friend_name %></p>
 <p>+1 address: <%= @user.friend_address %></p>
