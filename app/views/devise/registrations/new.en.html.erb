@@ -7,145 +7,140 @@
   <span class="languages2-phone"><%= link_to "Français", :locale=>'fr'%></span>
   <span class="languages"><%= link_to "English", :locale=>'en'%></span>
 </div>
+
 <div class="register_bandeau">
   <h3 class="text-center">Celebrating Homeshare !</h3>
 </div>
 <div class="container-fluid font-size-all green">
   <div class="text-center">
-  <div>
-    <h2>CONTACT</h2>
-    <p><strong class="font-size-welcome-intertitle">Homeshare International</strong><br />Elizabeth Mills &ndash;&nbsp;<a class="maile-color" href="mailto:Elizabeth@homeshare.org">Elizabeth@homeshare.org</a></p>
+    <div>
+      <h2>CONTACT</h2>
+      <p><strong class="font-size-welcome-intertitle">Homeshare International</strong><br />Elizabeth Mills &ndash;&nbsp;<a class="maile-color" href="mailto:Elizabeth@homeshare.org">Elizabeth@homeshare.org</a></p>
 
-    <p ><strong class="font-size-welcome-intertitle">1toit2ages</strong><br />Claire de Kerautem &ndash;&nbsp;<a class="maile-color" href="http://www.1toit2ages.be/fr/accueil.html">worldcongress@1toit2ages.be</a><br /></p>
+      <p ><strong class="font-size-welcome-intertitle">1toit2ages</strong><br />Claire de Kerautem &ndash;&nbsp;<a class="maile-color" href="http://www.1toit2ages.be/fr/accueil.html">worldcongress@1toit2ages.be</a><br /></p>
+    </div>
+    <p>&nbsp;</p>
+
+    <h2>REGISTER FORM (INDIVIDUAL)</h2>
   </div>
-  <p>&nbsp;</p>
-
-  <h2>REGISTER FORM (INDIVIDUAL)</h2>
-</div>
   <div>
     <p class="margin-text-about">Please complete the online form to register for the World Homeshare Congress to be held at the Auditorium Chancellerie BNP Paribas Fortis : <b>1, rue de la Chancellerie in Brussels on 21st and 22nd March 2018.</b></p>
   </div>
   <p>&nbsp;</p>
-
-<div class="text-center">
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-
-  <div class="form-signin">
-    <%= f.label :first_name %><br />
-    <%= f.text_field :first_name, class: 'form-input' %>
-  </div>
-  <div class="field">
-    <%= f.label :last_name %><br />
-    <%= f.text_field :last_name, class: 'form-input' %>
-  </div>
-  <div class="field">
-    <%= f.label :organization_or_institution %><br />
-    <%= f.text_field :organisation, class: 'form-input' %>
-  </div>
-  <div class="field">
-    <%= f.label :address %><br />
-    <%= f.text_field :address, class: 'form-input' %>
-  </div>
-  <div class="field">
-    <%= f.label :city %><br />
-    <%= f.text_field :city, class: 'form-input' %>
-  </div>
-  <div class="field">
-    <%= f.label :state_province_region %><br />
-    <%= f.text_field :state, class: 'form-input' %>
-  </div>
-  <div class="field">
-    <%= f.label :postal_code_zip %><br />
-    <%= f.text_field :zip, class: 'form-input' %>
-  </div>
-  <div class="field">
-    <%= f.label :country %><br />
-    <%= f.text_field :country, class: 'form-input' %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autocomplete: "email", class: 'form-input' %>
-  </div>
-  <div class="field">
-    <%= f.label :telephone %><br />
-    <%= f.text_field :telephone, class: 'form-input' %>
-  </div>
-  <div class="field">
-    <%= f.label :mobile %><br />
-    <%= f.text_field :mobile, class: 'form-input' %>
-  </div>
-  <!-- <div class="field">
-    <%= f.label :dietary %><br />
-    <%= f.text_field :dietary, class: 'form-input' %>
-  </div> -->
+  <div class="text-center">
+    <div class="form-signin">
+      <%= f.label :first_name %><br />
+      <%= f.text_field :first_name, class: 'form-input' %>
+    </div>
+    <div class="field">
+      <%= f.label :last_name %><br />
+      <%= f.text_field :last_name, class: 'form-input' %>
+    </div>
+    <div class="field">
+      <%= f.label :organization_or_institution %><br />
+      <%= f.text_field :organisation, class: 'form-input' %>
+    </div>
+    <div class="field">
+      <%= f.label :address %><br />
+      <%= f.text_field :address, class: 'form-input' %>
+    </div>
+    <div class="field">
+      <%= f.label :city %><br />
+      <%= f.text_field :city, class: 'form-input' %>
+    </div>
+    <div class="field">
+      <%= f.label :state_province_region %><br />
+      <%= f.text_field :state, class: 'form-input' %>
+    </div>
+    <div class="field">
+      <%= f.label :postal_code_zip %><br />
+      <%= f.text_field :zip, class: 'form-input' %>
+    </div>
+    <div class="field">
+      <%= f.label :country %><br />
+      <%= f.text_field :country, class: 'form-input' %>
+    </div>
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autocomplete: "email", class: 'form-input' %>
+    </div>
+    <div class="field">
+      <%= f.label :telephone %><br />
+      <%= f.text_field :telephone, class: 'form-input' %>
+    </div>
+    <div class="field">
+      <%= f.label :mobile %><br />
+      <%= f.text_field :mobile, class: 'form-input' %>
+    </div>
   </div>
   <div class="margin-text-about">
-  <p>&nbsp;</p>
-  <p ">Please note that your name, organization and email address will be included in the Congress paperwork. </p>
-  <p">If you do not wish this information to be included, please contact us. Moreover, we will take pictures during the congress, if you don&rsquo;t allow us to publish please contact us.</p>
-  <p>&nbsp;</p>
-</div>
+    <p>&nbsp;</p>
+    <p ">Please note that your name, organization and email address will be included in the Congress paperwork. </p>
+    <p">If you do not wish this information to be included, please contact us. Moreover, we will take pictures during the congress, if you don&rsquo;t allow us to publish please contact us.</p>
+    <p>&nbsp;</p>
+  </div>
   <div class="margin-text-about">
-  <b><h3 class="padding-register">PRICES</h3></b>
-  <p class="font-size-welcome-intertitle">Belgian citizens</p>
-  <p>Congress 2 days = 50 euros</p>
-  <p>Reduction for members of 1toit2ages, students, seniors +65 = 25 euros</p>
-  <p>&nbsp;</p>
-  <p class="font-size-welcome-intertitle">Members of the Homeshare International</p>
-  <p>&middot; Congress and cocktail (20/3) + Diner de Gala (21/3) = 150 euros</p>
-  <p>(Registration before Jan 20th 2019)</p>
-  <p>&middot; Congress and cocktail (20/3) + Diner de Gala (21/3) = 170 euros</p>
-  <p>(Registration after Jan 20th 2019)</p>
-  <p>&nbsp;</p>
-  <p class="font-size-welcome-intertitle">Non members of the Homeshare International</p>
-  <p>&middot; Full Congress + Diner de Gala (21/3) = 170 euros</p>
-  <p>(Registration before Jan 20th 2019)</p>
-  <p>&middot; Full Congress + Diner de Gala (21/3) = 190 euros</p>
-  <p>(Registration after Jan 20th 2019)</p>
-  <p>&nbsp;</p>
-  <p>If you will be accompanied by a spouse or partner on your visit to Brussels, you are welcome to bring them to the Congress Dinner on the evening of 21st March. Please note that the cost for the dinner will be 50 Euros, and can be paid upon registration</p>
-  <p>&nbsp;</p>
-  <p>Members of the Homeshare International Network may register for the Congress for 150 Euros. Please tick here if you or your organisation are members.</p>
-  <div class="field">
-    <%= f.check_box :members %>
-    <%= f.label :members %>
+    <b><h3 class="padding-register">PRICES</h3></b>
+    <p class="font-size-welcome-intertitle">Belgian citizens</p>
+    <p>Congress 2 days = 50 euros</p>
+    <p>Reduction for members of 1toit2ages, students, seniors +65 = 25 euros</p>
+    <p>&nbsp;</p>
+    <p class="font-size-welcome-intertitle">Members of the Homeshare International</p>
+    <p>&middot; Congress and cocktail (20/3) + Diner de Gala (21/3) = 150 euros</p>
+    <p>(Registration before Jan 20th 2019)</p>
+    <p>&middot; Congress and cocktail (20/3) + Diner de Gala (21/3) = 170 euros</p>
+    <p>(Registration after Jan 20th 2019)</p>
+    <p>&nbsp;</p>
+    <p class="font-size-welcome-intertitle">Non members of the Homeshare International</p>
+    <p>&middot; Full Congress + Diner de Gala (21/3) = 170 euros</p>
+    <p>(Registration before Jan 20th 2019)</p>
+    <p>&middot; Full Congress + Diner de Gala (21/3) = 190 euros</p>
+    <p>(Registration after Jan 20th 2019)</p>
+    <p>&nbsp;</p>
+    <p>If you will be accompanied by a spouse or partner on your visit to Brussels, you are welcome to bring them to the Congress Dinner on the evening of 21st March. Please note that the cost for the dinner will be 50 Euros, and can be paid upon registration</p>
+    <p>&nbsp;</p>
+    <p>Members of the Homeshare International Network may register for the Congress for 150 Euros. Please tick here if you or your organisation are members.</p>
+    <div class="field">
+      <%= f.check_box :members %>
+      <%= f.label :members %>
+    </div>
+    <p>&nbsp;</p>
   </div>
-  <p>&nbsp;</p>
-</div>
-<div class="text-center">
-  <b><p>Congress participation mode</p></b>
-  <div class="field hidden-xs">
-    <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1toit2ages, students, seniors +65 = 25 euros','Congress and cocktail (20/3) + Diner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 190 euros']%>
-  </div>
-  <div class="field form-font-size visible-xs">
-    <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1toit2ages, students, seniors +65 = 25 euros','Congress and cocktail (20/3) + Diner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 190 euros']%>
-  </div>
+  <div class="text-center">
+    <b><p>Congress participation mode</p></b>
+    <div class="field hidden-xs">
+      <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1toit2ages, students, seniors +65 = 25 euros','Congress and cocktail (20/3) + Diner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 190 euros']%>
+    </div>
+    <div class="field form-font-size visible-xs">
+      <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1toit2ages, students, seniors +65 = 25 euros','Congress and cocktail (20/3) + Diner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 190 euros']%>
+    </div>
 
-  <p>&nbsp;</p>
-  <b><p>Invoice address if different from delegate address above</p></b>
-  <div class="field">
-    <%= f.label :Complete_name %><br />
-    <%= f.text_field :friend_name, class: 'form-input' %>
+    <p>&nbsp;</p>
+    <b><p>Invoice address if different from delegate address above</p></b>
+    <div class="field">
+      <%= f.label :Complete_name %><br />
+      <%= f.text_field :friend_name, class: 'form-input' %>
+    </div>
+    <div class="field">
+      <%= f.label :Address %><br />
+      <%= f.text_field :friend_address, class: 'form-input' %>
+    </div>
+    <p>&nbsp;</p>
+    <p>The Congress rates do not include accommodation.</p>
+    <p>&nbsp;</p>
+    <b><p>PAYEMENT</p></b>
+    <p>Thanks for your contribution on 1Toit2Ages account</p>
+    <p>IBAN BE39 3630 5564 6819</p>
+    <p>BIC BBRUBEBB</p>
+    <div class="actions">
+      <%= f.submit "Register", :class => 'button-register' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :Address %><br />
-    <%= f.text_field :friend_address, class: 'form-input' %>
-  </div>
-  <p>&nbsp;</p>
-  <p>The Congress rates do not include accommodation.</p>
-  <p>&nbsp;</p>
-  <b><p>PAYEMENT</p></b>
-  <p>Thanks for your contribution on 1Toit2Ages account</p>
-  <p>IBAN BE39 3630 5564 6819</p>
-  <p>BIC BBRUBEBB</p>
-  <div class="actions">
-    <%= f.submit "Register", :class => 'button-register' %>
-  </div>
-</div>
   <% end %>
-  </div>
+</div>
 
 <div class="text-center">
   <p>Cancellations received before February 15 th 2019 25%. Up to 10th March 2019,75%, no refunds thereafter.</p>
