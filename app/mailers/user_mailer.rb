@@ -10,11 +10,12 @@ class UserMailer < ApplicationMailer
     @users = [@user.email]
     @claire = ["matthieulombard@1toit2ages.be"]
     mail(to: @users, :template_name => "welcome", subject: 'Homesharecongress2019, Confirmation: You are registered').deliver!
+    mail(to: @claire, :template_name => "patate.html.erb", subject: 'Homesharecongress2019, Confirmation: You are registered').deliver!
     # This will render a view in `app/views/user_mailer`!
   end
-  def patate(user)
-    @claire = ["matthieulombard@1toit2ages.be"]
-    mail(to: @claire, :template_name => "patate", subject: 'Homesharecongress2019, Confirmation: You are registered').deliver!
-    # This will render a view in `app/views/user_mailer`!
-  end
+  # def patate(user)
+  #   @claire = ["matthieulombard@1toit2ages.be"]
+  #   mail(to: @claire, :template_name => "patate", subject: 'Homesharecongress2019, Confirmation: You are registered').deliver!
+  #   # This will render a view in `app/views/user_mailer`!
+  # end
 end
