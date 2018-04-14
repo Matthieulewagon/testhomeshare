@@ -101,40 +101,42 @@
       <%= f.check_box :members %>
       <%= f.label :membres %>
     </div>
+  </div>
+  <p>&nbsp;</p>
+  <div class="text-center">
+    <b><p>Mode de participation</p></b>
+    <div class="field hidden-xs">
+      <%= f.select :prices, ['Congrès 2 jours = 50 euros', 'Réduction pour les membres de 1toit2ages, étudiants, seniors +65 = 25 euros',' Congrès et cocktail (20/3) + dîner (21/3) = 150 euros', 'Congrès et cocktail (20/3) + dîner (21/3) = 180 euros', 'Congrès + dîner (21/3) = 170 euros', 'Congrès + dîner (21/3) = 180 euros']%>
+    </div>
+    <div class="field form-font-size visible-xs">
+      <%= f.select :prices, ['Congrès 2 jours = 50 euros', 'Réduction pour les membres de 1toit2ages, étudiants, seniors +65 = 25 euros',' Congrès et cocktail (20/3) + dîner (21/3) = 150 euros', 'Congrès et cocktail (20/3) + dîner (21/3) = 180 euros', 'Congrès + dîner (21/3) = 170 euros', 'Congrès + dîner (21/3) = 180 euros']%>
+    </div>
     <p>&nbsp;</p>
-    <div class="text-center">
-      <b><p>Mode de participation</p></b>
-      <div class="field hidden-xs">
-        <%= f.select :prices, ['Congrès 2 jours = 50 euros', 'Réduction pour les membres de 1toit2ages, étudiants, seniors +65 = 25 euros',' Congrès et cocktail (20/3) + dîner (21/3) = 150 euros', 'Congrès et cocktail (20/3) + dîner (21/3) = 180 euros', 'Congrès + dîner (21/3) = 170 euros', 'Congrès + dîner (21/3) = 180 euros']%>
-      </div>
-      <div class="field form-font-size visible-xs">
-        <%= f.select :prices, ['Congrès 2 jours = 50 euros', 'Réduction pour les membres de 1toit2ages, étudiants, seniors +65 = 25 euros',' Congrès et cocktail (20/3) + dîner (21/3) = 150 euros', 'Congrès et cocktail (20/3) + dîner (21/3) = 180 euros', 'Congrès + dîner (21/3) = 170 euros', 'Congrès + dîner (21/3) = 180 euros']%>
-      </div>
-      <p>&nbsp;</p>
-      <b><p>Adresse de facturation (si différente) </p></b>
-      <div class="field">
-        <%= f.label :Nom %><br />
-        <%= f.text_field :friend_name, class: 'form-input' %>
-      </div>
-      <div class="field">
-        <%= f.label :Adresse %><br />
-        <%= f.text_field :friend_address, class: 'form-input' %>
-      </div>
-      <p>&nbsp;</p>
-      <p>Attention : Ces tarifs n'incluent pas l'h&eacute;bergement.</p>
-      <p>&nbsp;</p>
-      <b><p>PAIEMENT</p></b>
-      <u><p>Merci pour votre paiement sur le compte de l&rsquo;ASBL :</p></u>
-      <p>ING Bank - 1Toit2Ages</p>
-      <p>IBAN BE39 3630 5564 6819</p>
-      <p>BIC BBRUBEBB</p>
-      <div class="actions">
-        <%= f.submit "Enregistrement", :class => 'button-register' %>
-      </div>
+    <b><p>Adresse de facturation (si différente) </p></b>
+    <div class="field">
+      <%= f.label :Nom %><br />
+      <%= f.text_field :friend_name, class: 'form-input' %>
+    </div>
+    <div class="field">
+      <%= f.label :Adresse %><br />
+      <%= f.text_field :friend_address, class: 'form-input' %>
+    </div>
+    <p>&nbsp;</p>
+    <p>Attention : Ces tarifs n'incluent pas l'h&eacute;bergement.</p>
+    <p>&nbsp;</p>
+    <b><p>PAIEMENT</p></b>
+    <u><p>Merci pour votre paiement sur le compte de l&rsquo;ASBL :</p></u>
+    <p>ING Bank - 1Toit2Ages</p>
+    <p>IBAN BE39 3630 5564 6819</p>
+    <p>BIC BBRUBEBB</p>
+    <div class="actions">
+      <%= f.submit "Enregistrement", :class => 'button-register' %>
     </div>
   </div>
+
   <% end %>
   <p>&nbsp;</p>
   <p class="text-center">Annulations recues avant le 15 f&eacute;vrier 2019 : Remboursement de 75%. Annulations recues jusqu'au 10 mars 2019 : Remboursement de 25%.
     <p class="text-center">Aucun remboursement apr&egrave;s le 10 mars .</p>
   </div>
+</div>
