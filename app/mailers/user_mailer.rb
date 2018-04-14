@@ -7,17 +7,17 @@ class UserMailer < ApplicationMailer
   #
   def welcome(user)
     @user = user  # Instance variable => available in view
-    @users = [@user.email, "matthieulombard@1toit2ages.be"]
-
-    mail(to: @users, subject: 'Homesharecongress2019, Confirmation: You are registered')
-    # This will render a view in `app/views/user_mailer`!
-  end
-  def welcome2(user)
-      # Instance variable => available in view
+    @users = [@user.email]
     @claire = ["matthieulombard@1toit2ages.be"]
-
-    mail(to: @claire, subject: 'Homesharecongress2019, Confirmation: You are registered')
+    mail(to: @users, subject: 'Homesharecongress2019, Confirmation: You are registered').deliver!
+    mail(to: @claire, :template_name => "welcome2", subject: 'Homesharecongress2019, Confirmation: You are registered').deliver!
     # This will render a view in `app/views/user_mailer`!
   end
-end
+  # def welcome2(user)
+  #     # Instance variable => available in view
+  #   @claire = ["matthieulombard@1toit2ages.be"]
 
+  #   mail(to: @claire, subject: 'Homesharecongress2019, Confirmation: You are registered')
+  #   # This will render a view in `app/views/user_mailer`!
+  # end
+end
