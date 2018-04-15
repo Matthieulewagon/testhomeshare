@@ -2,12 +2,12 @@
   <ul class="nav navbar-nav">
     <a class="navbar-brand navbar-height logo-img white" href="http://www.1toit2ages.be/fr/accueil.html"></a>
     <a class="navbar-brand navbar-height2 logo2-img white" href="https://homesharetest2019.herokuapp.com"></a>
-    <li><%=link_to "Press and Media",press_and_media_show_path, class: "navbar-brand"%></a></li>
-    <li><%=link_to "Homeshare International",homeshare_international_show_path, class: "navbar-brand"%></a></li>
-    <li><%=link_to "About Homeshare",about_homeshare_show_path, class: "navbar-brand"%></a></li>
-    <li><%=link_to "1toit2ages in Belgium",programmes_bxl_show_path, class: "navbar-brand"%></li>
-    <li><%=link_to "Welcome to Brussels",welcome_show_path, class: "navbar-brand"%></a></li>
-    <li><%=link_to "Home",root_path, class: "navbar-brand"%></li>
+    <li class="navbar-big-screen"><%=link_to "Press and Media",press_and_media_show_path, class: "navbar-brand"%></a></li>
+    <li class="navbar-big-screen"><%=link_to "Homeshare International",homeshare_international_show_path, class: "navbar-brand"%></a></li>
+    <li class="navbar-big-screen"><%=link_to "About Homeshare",about_homeshare_show_path, class: "navbar-brand"%></a></li>
+    <li class="navbar-big-screen"><%=link_to "1toit2ages in Belgium",programmes_bxl_show_path, class: "navbar-brand"%></li>
+    <li class="navbar-big-screen"><%=link_to "Welcome to Brussels",welcome_show_path, class: "navbar-brand"%></a></li>
+    <li class="navbar-big-screen"><%=link_to "Home",root_path, class: "navbar-brand"%></li>
     <% if !user_signed_in? %>
     <li><%=link_to "Register and Contact",new_user_registration_path, class: "button-nav navbar-margin-right"%></a></li>
     <% end %>
