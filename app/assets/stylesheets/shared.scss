@@ -4,7 +4,7 @@
 }
 
 .navbar-margin-right {
-  margin-right: 7px;
+  margin-right: -8px;
 }
 
 .navbar-height {
@@ -35,12 +35,58 @@
   border-radius: 5px 5px 5px 5px !important;
   }
 
+.container {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    padding: 0px;
+}
+.one {
+    width: 24%;
+    height: 200px;
+    background: red;
+    float: left;
+}
+.two {
+    margin-left: 24%;
+    height: 200px;
+    background: black;
+}
+
+.navbar-one {
+  width: 28%;
+  height: 150px;
+  padding-top: 11px;
+  float: left;
+}
+.navbar-two {
+  margin-left: 28%;
+  height: 75px;
+  // padding-top: 11px;
+  // padding-bottom: 40px;
+}
+
+.navbar-three {
+  margin-left: 28%;
+  height: 75px;
+  padding-top: 0px;
+  padding-bottom: 54px;
+}
+
+.navbar-nav {
+  float: right !important;
+}
+
+.container {
+  width: 100% !important;
+}
+
 .logo-img {
   background-image: image-url('1toit2ages_logo.jpg');
   background-size: cover;
   height: 10%;
   width: 5%;
-  margin-left: 20px !important;
+  margin-left: -10% !important;
 }
 
 .logo2-img {
@@ -48,9 +94,9 @@
   background-size: cover;
   height: 10%;
   width: 5%;
-  margin-left: 2.1% !important;
-  margin-bottom: 2px;
-  margin-top: 2px;
+  margin-left: 7% !important;
+  margin-bottom: 0px;
+  margin-top: -4px;
 }
 
 .logo-img-phone {
@@ -90,7 +136,7 @@
   font-size: 15px !important;
 }
 .navbar-big-screen {
-  padding-right: 0.6%;
+  padding-right: 0.1%;
 }
 
 .navbar-brand-phone {
@@ -163,4 +209,7 @@ li a.current{
    background-color: #e6e6e5b3;
 }
 
+.margin-press {
+  margin-left: 3%;
+}
 
