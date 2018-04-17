@@ -76,6 +76,13 @@
   padding-bottom: 54px;
 }
 
+.navbar-three-fr {
+  margin-left: 50%;
+  height: 54px;
+  padding-top: 0px;
+  padding-bottom: 54px;
+}
+
 .navbar-nav {
   float: right !important;
 }
@@ -101,6 +108,23 @@
   margin-left: 33px !important;
   margin-bottom: 0px;
   margin-top: -9px;
+}
+
+.logo-img-fr {
+  background-image: image-url('1toit2ages_logo.jpg');
+  background-size: cover;
+  height: 10%;
+  width: 5%;
+  margin-left: 24px !important;
+}
+
+.logo2-img-fr {
+  background-image: image-url('logo2.jpg');
+  background-size: cover;
+  height: 10%;
+  width: 5%;
+  margin-left: 33px !important;
+  margin-bottom: 0px;
 }
 
 .logo-img-phone {
