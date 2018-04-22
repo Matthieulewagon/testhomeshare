@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
   devise_for :users
+
+  get 'sitemap.xml', :to => 'sitemap#index', :defaults => {:format => 'xml'}
+
   get 'welcome/show'
 
   get 'bxl/show'
