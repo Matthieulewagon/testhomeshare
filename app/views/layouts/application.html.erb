@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CongressHomeshare2019</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homeshare International | 6th World Homeshare Congress, Brussels 2019</title>
+  <meta name="description" content="Whether you are an academic or a journalist, coming from the political, social or non profit world, Come Share and Develop your network !
+
+  Discover other international organizations coming from all over the world, and listen to qualified experts !">
+
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
+</head>
 
-  <body>
-    <%= render 'shared/above_navbar' %>
-    <%= render 'shared/navbar' %>
+<body>
+  <%= render 'shared/above_navbar' %>
+  <%= render 'shared/navbar' %>
 
 
-    <%= yield %>
-    <%= javascript_include_tag 'application' %>
-  </body>
-      <%= render 'shared/flashes' %>
+  <%= yield %>
+  <%= javascript_include_tag 'application' %>
+</body>
+<%= render 'shared/flashes' %>
 
-      <%= render 'shared/footer' %>
+<%= render 'shared/footer' %>
 </html>
