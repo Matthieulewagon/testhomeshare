@@ -10,6 +10,7 @@ gem 'rails', '5.1.5'
 gem 'redis'
 gem 'rails-i18n'
 
+gem 'meta-tags'
 gem 'postmark-rails'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks'
