@@ -17,6 +17,11 @@
   width: 141px !important;
 }
 
+.navbar-height3 {
+  height: 100px !important;
+  width: 137px !important;
+}
+
 .navbar-height-phone {
   height: 50px !important;
   width: 46px !important;
@@ -25,6 +30,11 @@
 .navbar-height2-phone {
   height: 50px !important;
   width: 70px !important;
+}
+
+.navbar-height3-phone {
+  height: 50px !important;
+  width: 60px !important;
 }
 
 .navbar-color {
@@ -150,6 +160,17 @@
   height: 10%;
   width: 5%;
   margin-left: 2.1% !important;
+  // margin-right: 2.1%;
+  margin-bottom: 0px;
+  margin-top: 3px;
+}
+
+.logo3-img-phone {
+  background-image: image-url('logo3.jpg');
+  background-size: cover;
+  height: 10%;
+  width: 5%;
+  margin-left: 1.5% !important;
   // margin-right: 2.1%;
   margin-bottom: 0px;
   margin-top: 3px;
