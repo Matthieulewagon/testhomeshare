@@ -10,15 +10,14 @@
     </div>
     <div class="navbar-two">
       <ul>
-        <li class="navbar-big-screen"><%=link_to "Press and Media",press_and_media_show_path, class: "navbar-brand"%></a></li>
         <li class="navbar-big-screen"><%=link_to "Homeshare International",homeshare_international_show_path, class: "navbar-brand"%></a></li>
         <li class="navbar-big-screen"><%=link_to "About Homeshare",about_homeshare_show_path, class: "navbar-brand"%></a></li>
-        <li class="navbar-big-screen"><%=link_to "1toit2ages in Belgium",programmes_bxl_show_path, class: "navbar-brand"%></li>
+        <li class="navbar-big-screen"><%=link_to "1Toit 2Ages in Belgium",programmes_bxl_show_path, class: "navbar-brand"%></li>
         <li class="navbar-big-screen"><%=link_to "Welcome to Brussels",welcome_show_path, class: "navbar-brand"%></a></li>
         <li class="navbar-big-screen"><%=link_to "Home",root_path, class: "navbar-brand"%></li>
       </ul>
     </div>
-    <div class="navbar-three">
+    <div class="navbar-three-fr">
       <ul>
         <% if !user_signed_in? %>
         <li><%=link_to "Register and Contact",new_user_registration_path, class: "button-nav navbar-margin-right"%></a></li>
@@ -30,7 +29,7 @@
         <% end %>
         <li class="navbar-big-screen"><%=link_to "Program",programme_show_path, class: "navbar-brand"%></a></li>
         <li class="navbar-big-screen"><%=link_to "Speakers",speakers_show_path, class: "navbar-brand"%></a></li>
-
+        <li class="navbar-big-screen"><%=link_to "Press and Media",press_and_media_show_path, class: "navbar-brand"%></a></li>
       </ul>
     </div>
   </div>
@@ -48,7 +47,7 @@
 
       <%=link_to "Home",root_path, class: "navbar-brand-phone"%>
       <%=link_to "Welcome to Brussels",welcome_show_path, class: "navbar-brand-phone"%>
-      <%=link_to "1toit2ages in Belgium",programmes_bxl_show_path, class: "navbar-brand-phone"%>
+      <%=link_to "1Toit 2Ages in Belgium",programmes_bxl_show_path, class: "navbar-brand-phone"%>
       <%=link_to "About Homeshare",about_homeshare_show_path, class: "navbar-brand-phone"%>
       <%=link_to "Homeshare International",homeshare_international_show_path, class: "navbar-brand-phone"%>
       <%=link_to "Press and Media",press_and_media_show_path, class: "navbar-brand-phone"%>
