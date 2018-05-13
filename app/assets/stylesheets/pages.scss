@@ -35,6 +35,11 @@
   //max-width: 387px;
   max-width:85%
   }
+@media (max-width: 500px) {
+  .HomeTxtOnImage {
+    font-size: 1.6em;//25px;
+  }
+}
 
 .welcome-img-fr {
   margin-top:0px;
@@ -292,3 +297,18 @@
     margin-right: 11%;
 }
 
+.myButton {
+  font-size: 1.4em;
+}
+
+.myH1 {
+  font-size: 2.4em;
+}
+
+.myH2 {
+  font-size: 1.6em;
+}
+
+.myText {
+  font-size: 1.2em;
+}
