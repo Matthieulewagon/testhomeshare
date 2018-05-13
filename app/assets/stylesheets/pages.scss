@@ -15,11 +15,26 @@
 
 .welcome-img {
   margin-top:0px;
-  background-image: image-url('Home1.jpg');
+  background-image: image-url('Home2.jpg');
   background-size: cover;
   // min-height: 565px;
   // max-height: 789px;
 }
+
+.HomeTxtOnImage {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 2em;//25px;
+  //color: #53b7b7; // color: rgb(83, 183, 183);
+  color: #FFFFFF;
+  //background-color: rgba(225, 225, 225, .4);
+  background-color: rgba(83, 183, 183,.4); //rgba(225, 225, 225, .4);
+  border-radius: 25px;
+  padding: 0px 15px 0px 15px;
+  //max-width: 387px;
+  max-width:85%
+  }
 
 .welcome-img-fr {
   margin-top:0px;

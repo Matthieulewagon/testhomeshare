@@ -16,7 +16,7 @@ module Homesharetest2019
 
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
-    config.i18n.available_locales = [:en, :fr]
+    config.i18n.available_locales = [:en, :fr] #, :es
     config.i18n.default_locale = :en
     config.action_mailer.delivery_method = :postmark
     config.action_mailer.postmark_settings = { :api_token => "993d15de-cee6-47d4-bdc4-36ff88d16216" }

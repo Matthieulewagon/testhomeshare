@@ -1,0 +1,52 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+fr:
+  txthello: "Saluuuuttt nounou !"
+
+  Home_Titre1: "21 ET 22 MARS 2019"
+  Home_Titre2: "Teaser de l'équipe cliquez ici !"
+  Home_Texte: "Que vous veniez du monde politique, social ou associatif, que vous soyez universitaire ou journaliste, que vous luttiez contre l’isolement de nos ainés ou aidiez les jeunes à trouver un logement accessible dans des villes surpeuplées, ne manquez pas ce rendez-vous international.  Venez découvrir des projets intergénérationnels du monde entier et rencontrer des conférenciers de qualité !"
+  Home_RegisterPlease: "Inscrivez-vous au 6<sup>ème</sup> Congrès International du Logement Intergénérationnel !"
+  Home_ImageLabel: "6<sup>ème</sup> Congrès Mondial du Logement Intergénérationnel"
+#  Home_ImageLabel: "6th World Homeshare Congress"  Navbar_HomeshareInternational: "Homeshare International"
+
+  Generic_FindUS: "Rejoignez-nous sur"
+
+  Navbar_About: "Logement Intergénérationnel"
+  Navbar_1t2aInBelgium: "1Toit 2Ages en Belgique"
+  Navbar_WelcomeToBrussels: "Bienvenue à Bruxelles"
+  Navbar_Home: "Accueil"
+  Navbar_RegisterAndContact: "Contact et Inscription"
+  Navbar_Programme: "Programme"
+  Navbar_Speakers: "Intervenants"
+  Navbar_Press: "Presse"
+

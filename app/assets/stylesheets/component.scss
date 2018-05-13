@@ -4,7 +4,7 @@
 }
 
 .button-nav {
-    background-color: #53b7b7 !important;
+    background-color: #53b7b7d6 !important;
     border: none;
     color: white !important;
     padding: 15px 25px;
@@ -15,7 +15,7 @@
 }
 
 .button-register {
-    background-color: #53b7b7;
+    background-color: #53b7b7d6;
     border: none;
     color: white !important;
     padding: 13px 100px;
@@ -52,6 +52,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+  border-radius: 25px;
 }
 
 .padding-img {

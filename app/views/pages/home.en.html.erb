@@ -13,27 +13,32 @@
 </div>
 
 <!-- First Container -->
-<div class="container-fluid hidden-xs padding-img welcome-img text-center">
-  <!-- <h3 class="welcome-title-police"> 6TH WORLD HOMESHARE CONGRESS!</h3> -->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+  <div class="container-fluid padding-img welcome-img text-center">
+<!--    hidden-xs-->
+  </div>
+<!--  <img src="Home2.jpg">-->
+  <div class="HomeTxtOnImage "><%= raw t :Home_ImageLabel %> </div>
+</div>
+<div class="col-lg-3 col-md-3 hidden-xs hidden-sm"></div>
 </div>
 
+<!-- <h3 class="welcome-title-police"> 6TH WORLD HOMESHARE CONGRESS!</h3> -->
 <!-- phone part -->
-<div class="container-fluid visible-xs padding-img-phone welcome-img-phone text-center">
-<!--   <h3 class="welcome-title-police-phone"> 6TH WORLD HOMESHARE CONGRESS!</h3>
---></div>
+<!--<div class="row container-fluid visible-xs padding-img-phone welcome-img-phone text-center"></div>-->
 
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 font-size-all">
-  <p class="x_MsoNormal date-size text-center">21st - 22nd MARCH 2019</p>
-  <p class="x_MsoNormal text-center"><a class= "pink" href=" https://youtu.be/4oB4ssidT5s" target="_blank" rel="noopener noreferrer"><strong>Teaser of the team, click here !</strong></a></p>
-  <p class="margin-text-home text-justify">Whether you are already involved with a homeshare program or are thinking about starting one for your community; whether you are working with older people in danger of social isolation or providing student housing in an overcrowded city; or if you are an academic, a journalist, or coming from the wider political, social or non-profit world, this is THE Conference for you!&nbsp; Come and share your news and help to develop your network!&nbsp; Meet others from around the world with whom to share your experience, and learn from one another.</p>
+<!--<div class="container-fluid bg-2 font-size-all col-lg-12">-->
+<div class="container-fluid bg-2 font-size-all col-sm-12 col-xs-12  col-lg-6 col-lg-offset-3  col-md-8 col-md-offset-2 bg-2">
+  <p class="x_MsoNormal date-size text-center"><%= raw t :Home_Titre1 %></p>
+  <p class="x_MsoNormal text-center"><a class= "pink" href=" https://youtu.be/4oB4ssidT5s" target="_blank" rel="noopener noreferrer"><strong><%= t :Home_Titre2 %></strong></a></p>
+  <p class="text-justify"><%= t :Home_Texte %></p>
 </div>
 <div class="bg-2 text-center">
-  <p class="x_MsoNormal button "><a class= "white" href="http://www.hiworldcongressbrussels2019.com/users/sign_up?locale=en" rel="noopener noreferrer"><strong>REGISTER FOR THE 6TH WORLD HOMESHARE CONGRESS !</strong></a></p>
+  <p class="x_MsoNormal button "><a class= "white" href="http://www.hiworldcongressbrussels2019.com/users/sign_up?locale=<%= I18n.locale.to_s %>" rel="noopener noreferrer"><strong><%= raw t :Home_RegisterPlease %></strong></a></p>
   <p class="x_MsoNormal">&nbsp;</p>
-</div>
-
 </div>
 
 <div class="container-sponsors hidden-xs">

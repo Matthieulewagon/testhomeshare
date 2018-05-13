@@ -30,4 +30,19 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  txthello: "Hello world buddy !!"
+  Home_Titre1: "21<sup>st</sup> - 22<sup>nd</sup> MARCH 2019"
+  Home_Titre2: "Teaser of the team, click here !"
+  Home_Texte: "Whether you are already involved with a homeshare program or are thinking about starting one for your community; whether you are working with older people in danger of social isolation or providing student housing in an overcrowded city; or if you are an academic, a journalist, or coming from the wider political, social or non-profit world, this is THE Conference for you!&nbsp; Come and share your news and help to develop your network!&nbsp; Meet others from around the world with whom to share your experience, and learn from one another."
+  Home_RegisterPlease: "REGISTER FOR THE 6<sup>TH</sup> WORLD HOMESHARE CONGRESS !"
+  Generic_FindUS: "Find us on"
+  Home_ImageLabel: "6<sup>th</sup> World Homeshare Congress"
+  Navbar_HomeshareInternational: "Homeshare International"
+  Navbar_About: "About Homeshare"
+  Navbar_1t2aInBelgium: "1Toit 2Ages in Belgium"
+  Navbar_WelcomeToBrussels: "Welcome to Brussels"
+  Navbar_Home: "Home"
+  Navbar_RegisterAndContact: "Register and Contact"
+  Navbar_Programme: "Program"
+  Navbar_Speakers: "Speakers"
+  Navbar_Press: "Press"
