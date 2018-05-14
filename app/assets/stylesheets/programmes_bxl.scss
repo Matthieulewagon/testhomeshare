@@ -1,53 +1,45 @@
 .map-img {
-  margin-top: -14%;
-  margin-bottom: -13%;
+  margin-top: 2%;
+  margin-bottom: 5%;
   background-image: image-url('carte1toit2age.png') ;
   background-size: cover;
-  transform: scale(0.5, 0.5);
-  -ms-transform: scale(0.5, 0.5);
-  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.95, 0.95);
+  -ms-transform: scale(0.95, 0.95);
+  -webkit-transform: scale(0.95, 0.95);
 }
+
+//@media (min-width: 768px) and (max-width: 991px) {
+//  .map-img {
+//    background-image: image-url('carte1toit2age-md.png');
+//  }
+//}
+
+//@media (max-width: 767px) {
+//  .map-img {
+//    background-image: image-url('carte1toit2age-xs.png');
+//  }
+//}
 
 .binome_img {
   margin-top:0px;
-  background-image: image-url('binome1.png');
+  background-image: image-url('1t2a_be.png');
   background-size: cover;
-  // min-height: 462px;
-  // max-height: 789px;
-}
-.binome_img-fr {
-  margin-top:0px;
-  background-image: image-url('binome1fr.png');
-  background-size: cover;
-  // min-height: 462px;
-  // max-height: 789px;
+  padding-top: 35% !important;
 }
 
-.binome_img-phone {
-  margin-top:0px;
-  background-image: image-url('binome1.png');
-  background-size: cover;
-  // min-height: 130px;
-  // max-height: 789px;
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .binome_img {
+    background-image: image-url('1t2a_be-md.png');
+    padding-bottom: 0px !important;
+  }
 }
 
-.binome_img-phone-fr {
-  margin-top:0px;
-  background-image: image-url('binome1fr.png');
-  background-size: cover;
-  // min-height: 130px;
-  // max-height: 789px;
-}
-
-.map-img-phone {
-  margin-top: 0%;
-  margin-bottom: 0%;
-  // margin-right: 500px !important;
-  background-image: image-url('carte1toit2age.png');
-  background-size: cover;
-  // min-height: 263px;
-  // width: 1010px;
-
+@media (max-width: 767px) {
+  .binome_img {
+    background-image: image-url('1t2a_be-xs.png');
+    padding-bottom: 0px !important;
+  }
 }
 
 .map-title {

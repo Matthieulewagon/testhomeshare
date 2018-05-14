@@ -33,22 +33,22 @@
 
 }
 
+.welcome-img {
+  background-image: image-url('Home2_sm.jpg');
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
-  .toppage-img {
+  .welcome-img {
     background-image: image-url('Home2_sm.jpg');
     padding-bottom: 0px !important;
   }
 }
 
 @media (max-width: 767px) {
-  .toppage-img {
+  .welcome-img {
     background-image: image-url('Home2_xs.jpg');
     padding-bottom: 0px !important;
   }
-}
-
-.welcome-img {
-  background-image: image-url('Home2_sm.jpg');
 }
 
 .WelcomeTxtOnImage {
