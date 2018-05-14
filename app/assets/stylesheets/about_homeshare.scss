@@ -5,35 +5,18 @@
 .about-img {
   margin-top:0px;
   // background-image: image-url('homeshare1.JPG');
-  background-image: image-url('final_about_en.jpg');
+  background-image: image-url('about-lg.png');
   background-size: cover;
+  padding-top: 50% !important;
   // min-height: 575px;
   // max-height: 789px;
 }
 
-.about-img-fr {
-  margin-top:0px;
-  // background-image: image-url('homeshare1.JPG');
-  background-image: image-url('final_about_fr.jpg');
-  background-size: cover;
-  // min-height: 575px;
-  // max-height: 789px;
-}
-
-.about-img-phone {
-  margin-top:0px;
-  background-image: image-url('final_about_en.jpg');
-  background-size: cover;
-  // min-height: 155px;
-  // max-height: 789px;
-}
-
-.about-img-phone-fr {
-  margin-top:0px;
-  background-image: image-url('final_about_fr.jpg');
-  background-size: cover;
-  // min-height: 155px;
-  // max-height: 789px;
+@media (max-width: 767px) {
+  .about-img {
+    background-image: image-url('about-sm.png');
+    padding-bottom: 0px !important;
+  }
 }
 
 .about-homeshare-text-fr-phone {

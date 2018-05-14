@@ -21,24 +21,9 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-  #database: d3rp8skg2v65mn
-  #username: ipqtfaqqpswttq
-  #password: 711778f5afce2fea789071180e94ee95f464b217d52b3704562b0a0fcede586c
-  #pool: 5 # not mandatory
-  #timeout: 5000 # not mandatory
-  #host: ec2-54-228-181-43.eu-west-1.compute.amazonaws.com
-
-  database: homesharetest2019_development
-  username: postgres
-  password: maman123+
-  host: localhost
-
 development:
   <<: *default
-  #database: homesharetest2019_development
-  #username: root
-  #password: maman123+
-  #host: localhost
+  database: homesharetest2019_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
