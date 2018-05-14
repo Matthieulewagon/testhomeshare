@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'sitemap.xml', :to => 'sitemap#index', :defaults => {:format => 'xml'}
 
-  get 'welcome/show'
+  get 'welcome_to_brussels/show'
 
   get 'bxl/show'
 

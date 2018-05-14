@@ -16,29 +16,33 @@
 .TopImageContainer {
   padding-left: 0px !important;
   padding-right: 0px !important;
+  max-height: 789px;
 }
 .welcome-img {
   margin-top:0px;
-  background-image: image-url('Home2_lg.jpg');
+  background-image: image-url('Home2_sm.jpg');
   background-size: cover;
   background-position: center;
   padding-top: 65% !important;      //define height of image
-  padding-bottom: 0px !important;
+  padding-bottom: 0% ;
   padding-left: 0px;
   padding-right: 0px;
   // min-height: 565px;
-  // max-height: 789px;
+   max-height: 789px;
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .welcome-img {
     background-image: image-url('Home2_sm.jpg');
+    padding-bottom: 0px !important;
   }
 }
 
 @media (max-width: 767px) {
   .welcome-img {
     background-image: image-url('Home2_xs.jpg');
+    padding-bottom: 0px !important;
   }
 }
 
@@ -327,11 +331,11 @@
 }
 
 .myH1 {
-  font-size: 2.4em;
+  font-size: 2.0em;
 }
 
 .myH2 {
-  font-size: 1.6em;
+  font-size: 1.4em; //23px
 }
 
 .myText {
