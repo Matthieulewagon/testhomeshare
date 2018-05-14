@@ -21,9 +21,24 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
+  #database: d3rp8skg2v65mn
+  #username: ipqtfaqqpswttq
+  #password: 711778f5afce2fea789071180e94ee95f464b217d52b3704562b0a0fcede586c
+  #pool: 5 # not mandatory
+  #timeout: 5000 # not mandatory
+  #host: ec2-54-228-181-43.eu-west-1.compute.amazonaws.com
+
+  database: homesharetest2019_development
+  username: postgres
+  password: maman123+
+  host: localhost
+
 development:
   <<: *default
-  database: homesharetest2019_development
+  #database: homesharetest2019_development
+  #username: root
+  #password: maman123+
+  #host: localhost
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,8 +72,10 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: homesharetest2019_test
-
+  #database: homesharetest2019_test
+  #username: root
+  #password: maman123+
+  #host: localhost
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.

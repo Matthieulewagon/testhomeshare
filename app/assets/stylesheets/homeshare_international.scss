@@ -1,12 +1,20 @@
 .flag-img {
   // margin-top:135px;
   // background-image: image-url('cartesTEST.jpg');
-  background-image: image-url('final_map_inter_en.jpg');
+  background-image: image-url('HS_WorldMap_Colored.jpg');
   background-size: cover;
+  padding-top: 50% !important;
   // min-height: 575px;
   // max-height: 789px;
 }
 
+
+@media (max-width: 767px) {
+  .flag-img {
+    background-image: image-url('HS_WorldMap_Colored.jpg');
+    padding-bottom: 0px !important;
+  }
+}
 .flag-img-phone {
   // margin-top:135px;
   background-image: image-url('final_map_inter_en.jpg');
