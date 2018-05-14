@@ -17,14 +17,18 @@
   margin-top:0px;
   background-image: image-url('Home2.jpg');
   background-size: cover;
+background-position: center;
+  padding-top: 65% !important;      //define height of image
+  padding-bottom: 0px !important;
   // min-height: 565px;
   // max-height: 789px;
 }
 
-.HomeTxtOnImage {
+.WelcomeTxtOnImage {
   position: absolute;
   top: 15px;
   right: 25px;
+  margin-left: 25px;
   font-size: 2em;//25px;
   //color: #53b7b7; // color: rgb(83, 183, 183);
   color: #FFFFFF;
@@ -36,7 +40,7 @@
   max-width:85%
   }
 @media (max-width: 500px) {
-  .HomeTxtOnImage {
+  .WelcomeTxtOnImage {
     font-size: 1.6em;//25px;
   }
 }
