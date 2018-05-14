@@ -3,7 +3,7 @@ class UserMailer < ApplicationMailer
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
   #
-  #   en.user_mailer.welcome.subject
+  #   en.user_mailer.welcome_to_brussels.subject
   #
   def welcome(user)
     @user = user  # Instance variable => available in view
