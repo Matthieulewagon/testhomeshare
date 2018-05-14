@@ -4,14 +4,39 @@
 .margin-top {
   margin-top: 77px;
 }
+
+
 .hands-img {
-  margin-top: -6%;
-  // background-image: image-url('TEST.jpg');
-  background-image: image-url('final_prog_en.jpg');
+  margin-top:0px;
+  background-image: image-url('programme-lg.png');
   background-size: cover;
-  // min-height: 575px;
-  // max-height: 1000px;
+  padding-top: 35% !important;
 }
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hands-img {
+    background-image: image-url('programme-sm.png');
+    padding-bottom: 0px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hands-img {
+    background-image: image-url('programme-sm.png');
+    padding-bottom: 0px !important;
+  }
+}
+
+//
+//.hands-img {
+//  margin-top: -6%;
+//  // background-image: image-url('TEST.jpg');
+//  background-image: image-url('final_prog_en.jpg');
+//  background-size: cover;
+//  // min-height: 575px;
+//  // max-height: 1000px;
+//}
 
 .hands-img-fr {
   margin-top: -6%;
