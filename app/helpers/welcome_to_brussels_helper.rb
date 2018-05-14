@@ -1,0 +1,2 @@
+module WelcomeToBrusselsHelper
+end

@@ -11,30 +11,38 @@
   height: 100px !important;
   width: 85px !important;
 }
-
 .navbar-height2 {
   height: 100px !important;
-  width: 141px !important;
+  width: 167px !important;
 }
 
 .navbar-height3 {
   height: 100px !important;
-  width: 137px !important;
+  width: 118px !important;
 }
+
 
 .navbar-height-phone {
   height: 50px !important;
-  width: 46px !important;
+  width: 42px !important;  //org: w=94 h=111
 }
+
+
 
 .navbar-height2-phone {
   height: 50px !important;
-  width: 70px !important;
+  width: 83px !important;
+}
+@media  (max-width: 310px) {
+  .navbar-height2-phone {
+    visibility: hidden;
+    display: none;
+  }
 }
 
 .navbar-height3-phone {
   height: 50px !important;
-  width: 64px !important;
+  width: 59px !important;
 }
 
 .navbar-color {
@@ -65,9 +73,10 @@
 
 .navbar-one {
   // width: 31%;
-  width: 27%;
+  width: 37%;
   height: 104px;
-  padding-top: 11px;
+  padding-top: 2px;
+  //margin-left: -8% !important;
   float: left;
 }
 .navbar-two {
@@ -101,44 +110,69 @@
   width: 100% !important;
 }
 
-.logo-img {
-  background-image: image-url('1toit2ages_logo.jpg');
+
+.navbar-logo
+{
+  //height: 50px !important;
   background-size: cover;
   height: 10%;
-  width: 5%;
-  margin-left: -42px !important;
-  margin-top: -9px;
+  //width: 5% !important;
+  margin-bottom: 0px;
+  //margin-top: 3px;
+  margin-left: 2.1% !important;
+  //width: 5% !important;
+  padding-left: 5px;
+}
+
+.logo-img {
+  background-image: image-url('1toit2ages_logo-xs.jpg');
+  margin-left: -2.1% !important;
+  //background-size: cover;
+  //height: 10%;
+  //width: 5%;
+  //margin-left: -42px !important;
+  //margin-top: -9px !important;
 }
 
 .logo2-img {
-  background-image: image-url('logow.jpg');
-  background-size: cover;
-  height: 10%;
-  width: 5%;
-  margin-left: 13px !important;
-  margin-bottom: 0px;
-  margin-top: -9px;
+  background-image: image-url('6th-xs.png');
+  //background-size: cover;
+  //height: 10%;
+  //width: 5%;
+  //margin-left: 13px !important;
+  //margin-bottom: 0px;
+  //margin-top: -9px !important;
+  //margin-right: 10px;
 }
 
 .logo3-img {
-    background-image: image-url('logo3.jpg');
-    background-size: cover;
-    height: 10%;
-    width: 5%;
-    margin-left: 208px !important;
-    margin-top: -100px;
+    background-image: image-url('logo3-xs.jpg');
+    //background-size: cover;
+    //height: 10%;
+    //width: 5%;
+    //margin-left: 208px !important;
+  //margin-left:10px !important;
+  //margin-left:unset;
+    //margin-top: -100px;
+  //margin-top: -9px  !important;
   }
 
+@media  (max-width: 500px) {
+  .logo-img {background-image: image-url('1toit2ages_logo-xs.jpg');}
+  .logo2-img {background-image: image-url('6th-xs.png');}
+  .logo3-img {background-image: image-url('logo3-xs.jpg');}
+}
+
 .logo-img-fr {
-  background-image: image-url('1toit2ages_logo.jpg');
+  background-image: image-url('1toit2ages_logo-xs.jpg');
   background-size: cover;
   height: 10%;
   width: 5%;
-  margin-left: 24px !important;
+  //margin-left: 24px !important;
 }
 
 .logo2-img-fr {
-  background-image: image-url('logow.jpg');
+  background-image: image-url('6th-xs.png');
   background-size: cover;
   height: 10%;
   width: 5%;
@@ -147,44 +181,44 @@
 }
 
 .logo-img-phone {
-  background-image: image-url('1toit2ages_logo.jpg');
+  background-image: image-url('1toit2ages_logo-xs.jpg');
+  background-size: cover;
+
+  height: 100%;
+  padding: 15px;
+  width: auto;
+  //height: 10%;
+  //width: 5%;
+  //margin-left: 5px !important;
+}
+
+.navbar-logo-phone
+{
+  //height: 50px !important;
   background-size: cover;
   height: 10%;
-  width: 5%;
-  margin-left: 5px !important;
+  //width: 5% !important;
+  margin-bottom: 0px;
+  margin-top: 3px;
+  margin-left: 2.1% !important;
+  //width: 5% !important;
 }
 
 .logo2-img-phone {
-  background-image: image-url('logow.jpg');
-  background-size: cover;
-  height: 10%;
-  width: 5%;
-  margin-left: 2.1% !important;
+  background-image: image-url('6th-xs.png');
   // margin-right: 2.1%;
-  margin-bottom: 0px;
-  margin-top: 3px;
 }
 
 .logo3-img-phone {
-  background-image: image-url('logo3.jpg');
-  background-size: cover;
-  height: 10%;
-  width: 5%;
-  margin-left: 1.5% !important;
+  background-image: image-url('logo3-xs.jpg');
+ //margin-left: 1.5% !important;
   // margin-right: 2.1%;
-  margin-bottom: 0px;
-  margin-top: 3px;
 }
 
 .logo2-img-phone2 {
-  background-image: image-url('logow.jpg');
-  background-size: cover;
-  height: 10%;
-  width: 5%;
-  margin-left: 2.1% !important;
+  background-image: image-url('6th-xs.png');
   // margin-right: 2.1%;
-  margin-bottom: 0px;
-  margin-top: 3px;
+
 }
 .navbar-brand {
   // color: #6f7d37;

@@ -13,15 +13,33 @@
   background-color: #53b7b7;
 }
 
+.TopImageContainer {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 .welcome-img {
   margin-top:0px;
-  background-image: image-url('Home2.jpg');
+  background-image: image-url('Home2_lg.jpg');
   background-size: cover;
-background-position: center;
+  background-position: center;
   padding-top: 65% !important;      //define height of image
   padding-bottom: 0px !important;
+  padding-left: 0px;
+  padding-right: 0px;
   // min-height: 565px;
   // max-height: 789px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .welcome-img {
+    background-image: image-url('Home2_sm.jpg');
+  }
+}
+
+@media (max-width: 767px) {
+  .welcome-img {
+    background-image: image-url('Home2_xs.jpg');
+  }
 }
 
 .WelcomeTxtOnImage {
@@ -37,11 +55,14 @@ background-position: center;
   border-radius: 25px;
   padding: 0px 15px 0px 15px;
   //max-width: 387px;
-  max-width:85%
+  max-width:90%
   }
+
 @media (max-width: 500px) {
   .WelcomeTxtOnImage {
     font-size: 1.6em;//25px;
+    bottom: 15px;
+    top: unset;
   }
 }
 
@@ -316,3 +337,9 @@ background-position: center;
 .myText {
   font-size: 1.2em;
 }
+
+.HomeRegisterButton {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
