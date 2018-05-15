@@ -79,40 +79,45 @@
   </div>
   <div class="margin-text-about">
     <b><h3 class="padding-register">PRICES</h3></b>
-    <p class="font-size-welcome-intertitle">Belgian citizens</p>
-    <p>Congress 2 days = 50 euros</p>
-    <p>Reduction for members of 1toit2ages, students, seniors +65 = 25 euros</p>
-    <p>&nbsp;</p>
+<!--    <p class="font-size-welcome-intertitle">Belgian citizens</p>-->
+<!--    <p>Congress 2 days = 50 euros</p>-->
+<!--    <p>Reduction for members of 1toit2ages, students, seniors +65 = 25 euros</p>-->
+<!--    <p>&nbsp;</p>-->
+
     <p class="font-size-welcome-intertitle">Members of the Homeshare International Network</p>
-    <p>&middot; Congress and cocktail (20/3) + Diner de Gala (21/3) = 150 euros</p>
-    <p>(Registration before Jan 20th 2019)</p>
-    <p>&middot; Congress and cocktail (20/3) + Diner de Gala (21/3) = 170 euros</p>
-    <p>(Registration after Jan 20th 2019)</p>
-    <p>Membership is open to homeshare programmes and to organisations and individuals who support the homeshare concept.  To join the Homeshare International Network, please register online <a class="pink-register" href="http://www.emailmeform.com/builder/form/5dUxK0sT67N47jY2c" target="_blank">here</a> or print off and complete the <a class="pink-register" href="https://homeshare.org/wp-content/uploads/HI-Network-application-form-1.pdf" target="_blank">HI Network application form</a></p>
+    <p>&bull; Cocktail Grand Place (20/3) + Full Congress + Gala Diner (21/3) =  <b>180 €</b> (20 € discount for Registration <u> before Jan 20th 2019 23:59</u>)</p>
+    <p>Membership is open to homeshare programmes and to organisations and individuals who support the homeshare concept.  To join the Homeshare International Network, please register online <a class="pink-register" href="http://www.emailmeform.com/builder/form/5dUxK0sT67N47jY2c" target="_blank">here</a> or print off and complete the <a class="pink-register" href="https://homeshare.org/wp-content/uploads/HI-Network-application-form-1.pdf" target="_blank">HI Network application form</a>.</p>
     <p>More information: <a class="pink-register" href="https://homeshare.org/network/" target="_blank" rel="noopener noreferrer">https://homeshare.org/network/</a></p>
     <p>&nbsp;</p>
     <p class="font-size-welcome-intertitle">Non members of the Homeshare International Network</p>
-    <p>&middot; Full Congress + Diner de Gala (21/3) = 170 euros</p>
-    <p>(Registration before Jan 20th 2019)</p>
-    <p>&middot; Full Congress + Diner de Gala (21/3) = 190 euros</p>
-    <p>(Registration after Jan 20th 2019)</p>
+    <p>&bull; Full Congress + Gala Diner (21/3) =  <b>190 €</b> (20 € discount for registration <u> before Jan 20th 2019 23:59</u>)</p>
+    <p>&bull; Full Congress = <b>50 €</b> (25 € discount for 1Toit2Ages members, students or seniors)</p>
     <p>&nbsp;</p>
-    <p>If you will be accompanied by a spouse or partner on your visit to Brussels, you are welcome to bring them to the Congress Dinner on the evening of 21st March. Please note that the cost for the dinner will be 50 Euros, and can be paid upon registration</p>
-    <p>&nbsp;</p>
-    <p>Members of the Homeshare International Network may register for the Congress for 150 Euros. Please tick here if you or your organisation are members.</p>
+<!--    <p>Members of the Homeshare International Network may register for the Congress for 150 Euros. Please tick here if you or your organisation are members.</p>-->
     <div class="field">
       <%= f.check_box :members %>
-      <%= f.label :members %>
+      <%= f.label :members %> (Please tick here if you or your organisation are members  of the Homeshare International Network)
     </div>
     <p>&nbsp;</p>
   </div>
   <div class="text-center">
     <b><p>Congress participation mode</p></b>
     <div class="field hidden-xs">
-      <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1Toit2Ages, students, seniors +65 = 25 euros','Congress and cocktail (20/3) + Diner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 190 euros']%>
+      <div class="Magali" style="visibility:hidden">Magali</div>
+      <%#= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1Toit2Ages, students, seniors +65 = 25 euros','Congress and cocktail (20/3) + Diner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 190 euros']%>
+      <% if Date.today > Date.parse("2019-1-20") %>
+        <%= f.select :prices, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 180 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 190 €'] %>
+      <% else %>
+        <%= f.select :prices, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 160 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 170 €'] %>
+      <% end %>
     </div>
     <div class="field form-font-size visible-xs">
-      <%= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1Toit2Ages, students, seniors +65 = 25 euros','Congress and cocktail (20/3) + Diner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 190 euros']%>
+      <%#= f.select :prices, ['Congress 2 days = 50 euros', 'Reduction for members of 1Toit2Ages, students, seniors +65 = 25 euros','Congress and cocktail (20/3) + Diner de Gala (21/3) = 150 euros', 'Congress and cocktail (20/3) + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 170 euros', 'Full Congress + Diner de Gala (21/3) = 190 euros']%>
+      <% if Date.today > Date.parse("2019-1-20") %>
+        <%= f.select :prices, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 180 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 190 €'] %>
+      <% else %>
+        <%= f.select :prices, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 160 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 170 €'] %>
+      <% end %>
     </div>
 
     <p>&nbsp;</p>
