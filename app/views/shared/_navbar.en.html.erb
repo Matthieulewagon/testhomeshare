@@ -9,7 +9,7 @@
     </div>
     <div class="navbar-two">
       <ul>
-        <li class="navbar-big-screen"><%=link_to t(:Navbar_HomeshareInternational) , homeshare_international_show_path, class: "navbar-brand"%></a></li>
+        <li class="navbar-big-screen" style="padding-right: 0px;"><%=link_to t(:Navbar_HomeshareInternational) , homeshare_international_show_path, class: "navbar-brand"%></a></li>
         <li class="navbar-big-screen"><%=link_to t(:Navbar_About),about_homeshare_show_path, class: "navbar-brand"%></a></li>
         <li class="navbar-big-screen"><%=link_to t(:Navbar_1t2aInBelgium),programmes_bxl_show_path, class: "navbar-brand"%></li>
         <li class="navbar-big-screen"><%=link_to t(:Navbar_WelcomeToBrussels),welcome_to_brussels_show_path, class: "navbar-brand"%></a></li>
@@ -19,11 +19,11 @@
     <div class="navbar-three-fr">
       <ul>
         <% if !user_signed_in? %>
-        <li  class="navbar-big-screen"><%=link_to t(:Navbar_RegisterAndContact),new_user_registration_path, class: "navbar-brand  button-nav navbar-margin-right navbuttonIE"%></a></li>
+        <li  class="navbar-big-screen" style="padding-right: 0px;"><%=link_to t(:Navbar_RegisterAndContact),new_user_registration_path, class: "navbar-brand  button-nav"%></a></li>
         <% end %>
         <% if user_signed_in? %>
-        <li  class="navbar-big-screen">
-          <%= link_to t(:Navbar_RegisterAndContact), destroy_user_session_path, method: :delete, class: "navbar-brand button-nav navbar-margin-right navbuttonIE"  %>
+        <li  class="navbar-big-screen" style="padding-right: 0px;">
+          <%= link_to t(:Navbar_RegisterAndContact), destroy_user_session_path, method: :delete, class: "navbar-brand button-nav"  %>
         </li>
         <% end %>
         <li class="navbar-big-screen "><%=link_to t(:Navbar_Programme),programme_show_path, class: "navbar-brand"%></a></li>
