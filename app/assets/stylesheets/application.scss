@@ -16,3 +16,12 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+.button-nav {
+  background-color: #53b7b7 !important;
+  color: #ffffff !important;
+}
+
+li a.current {
+  background-color: #53b7b7 !important;
+  color: #ffffff !important;
+}
