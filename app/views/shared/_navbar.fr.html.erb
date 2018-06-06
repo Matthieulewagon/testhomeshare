@@ -1,0 +1,59 @@
+<nav class="navbar hidden-md hidden-sm hidden-xs navbar-position navbar-color navbar-fixed-top">
+  <div class="container" style="padding-left: 0px;">
+    <div class="navbar-one">
+      <ul>
+        <a class="navbar-brand navbar-height  navbar-logo logo-img white" href="http://www.1toit2ages.be/<%= I18n.locale.to_s %>" target="_blank"></a>
+        <a class="navbar-brand navbar-height2 navbar-logo logo2-img white" href="http://www.hiworldcongressbrussels2019.com"></a>
+        <a class="navbar-brand navbar-height3 navbar-logo logo3-img white" href="https://homeshare.org" target="_blank"></a>
+      </ul>
+    </div>
+    <div class="navbar-two">
+      <ul>
+        <li class="navbar-big-screen"><%=link_to "Homeshare International",homeshare_international_show_path, class: "navbar-brand"%></a></li>
+        <li class="navbar-big-screen"><%=link_to "Logement Intergénérationnel",about_homeshare_show_path, class: "navbar-brand"%></a></li>
+        <li class="navbar-big-screen"><%=link_to "1toit2ages",programmes_bxl_show_path, class: "navbar-brand"%></li>
+        <li class="navbar-big-screen"><%=link_to "Bienvenue à Bruxelles",welcome_to_brussels_show_path, class: "navbar-brand"%></a></li>
+        <li class="navbar-big-screen"><%=link_to t(:Navbar_Home),root_path, class: "navbar-brand"%></li>
+      </ul>
+    </div>
+    <div class="navbar-three-fr">
+      <ul>
+        <% if !user_signed_in? %>
+        <li><%=link_to "Contact et Inscription",new_user_registration_path, class: "button-nav navbar-margin-right"%></a></li>
+        <% end %>
+        <% if user_signed_in? %>
+        <li>
+          <%= link_to 'Contact et Inscription', destroy_user_session_path, method: :delete, class: "button-nav navbar-margin-right"  %>
+        </li>
+        <% end %>
+        <li class="navbar-big-screen"><%=link_to "Programme",programme_show_path, class: "navbar-brand"%></a></li>
+        <li class="navbar-big-screen"><%=link_to "Intervenants",speakers_show_path, class: "navbar-brand"%></a></li>
+        <li class="navbar-big-screen"><%=link_to "Presse",press_and_media_show_path, class: "navbar-brand"%></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- <button class="btn btn-danger navbar-btn">REGISTER AND CONTACT</button> -->
+</nav>
+
+<!-- phone part -->
+<nav class="navbar visible-md visible-sm visible-xs navbar-position navbar-color navbar-fixed-top">
+  <a class="navbar-brand navbar-height-phone logo-img-phone " href="http://www.1toit2ages.be/fr/accueil.html"></a>
+  <a class="navbar-brand navbar-height2-phone logo2-img-phone2" href="http://www.hiworldcongressbrussels2019.com"></a>
+  <a class="navbar-brand navbar-height3-phone logo3-img-phone" href="https://homeshare.org/" target="_blank"></a>
+<div class="dropdown">
+  <button onclick="myFunction()" type="button" class="dropbtn glyphicon glyphicon-menu-hamburger"></button>
+  <div id="myDropdown" class="dropdown-content">
+
+      <%=link_to "Accueil",root_path, class: "navbar-brand-phone"%>
+      <%=link_to "Bienvenue à Bruxelles",welcome_to_brussels_show_path, class: "navbar-brand-phone"%>
+      <%=link_to "1toit2ages en Belgique",programmes_bxl_show_path, class: "navbar-brand-phone"%>
+      <%=link_to "Logement Intergénérationnel",about_homeshare_show_path, class: "navbar-brand-phone"%>
+      <%=link_to "Homeshare International",homeshare_international_show_path, class: "navbar-brand-phone"%>
+      <%=link_to "Presse",press_and_media_show_path, class: "navbar-brand-phone"%>
+      <%=link_to "Inscription et Contact",new_user_registration_path, class: "navbar-brand-phone"%>
+      <%=link_to "Programme",programme_show_path, class: "navbar-brand-phone"%>
+      <%=link_to "Intervenants",speakers_show_path, class: "navbar-brand-phone"%>
+
+  </div>
+</div>
+</nav>
