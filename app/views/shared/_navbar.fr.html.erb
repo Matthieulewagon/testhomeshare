@@ -50,7 +50,12 @@
       <%=link_to "Logement Intergénérationnel",about_homeshare_show_path, class: "navbar-brand-phone"%>
       <%=link_to "Homeshare International",homeshare_international_show_path, class: "navbar-brand-phone"%>
       <%=link_to "Presse",press_and_media_show_path, class: "navbar-brand-phone"%>
-      <%=link_to "Inscription et Contact",new_user_registration_path, class: "navbar-brand-phone"%>
+      <% if !user_signed_in? %>
+        <%=link_to t(:Navbar_RegisterAndContact),new_user_registration_path, class: "navbar-brand-phone"%>
+      <% end %>
+      <% if user_signed_in? %>
+        <%= link_to t(:Navbar_RegisterAndContact), destroy_user_session_path, method: :delete, class: "navbar-brand-phone"%>
+      <% end %>
       <%=link_to "Programme",programme_show_path, class: "navbar-brand-phone"%>
       <%=link_to "Intervenants",speakers_show_path, class: "navbar-brand-phone"%>
 
