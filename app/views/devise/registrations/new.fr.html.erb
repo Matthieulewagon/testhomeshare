@@ -102,22 +102,23 @@
   <p>&nbsp;</p>
   <div class="text-center">
     <b><p>Mode de participation</p></b>
-    <div class="field form-font-size-fr">
-      <%# if Date.today > Date.parse("2019-1-20") %>
+
+    <div class="field hidden-xs">
       <% if Date.today > Date.parse("2019-1-20") %>
-        <%= f.select :prices, ['Cocktail (20/3) + Congrès et  dîner (21/3) = 180 € (membres uniquement) ','Congrès 2 jours = 50 €', 'Adhérents 1Toit2Ages, étudiants, seniors +65 = 25 €',  'Congrès + dîner (21/3) = 190 €']%>
+      <%= f.select :prices, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 180 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 190 €'] %>
       <% else %>
-        <%= f.select :prices, ['Cocktail (20/3) + Congrès et  dîner (21/3) = 160 € (membres uniquement) ','Congrès 2 jours = 50 €', 'Adhérents 1Toit2Ages, étudiants, seniors +65 = 25 €',  'Congrès + dîner (21/3) = 170 €']%>
+      <%= f.select :prices, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 160 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 170 €'] %>
       <% end %>
     </div>
-    <!-- <div class="field form-font-size-fr visible-xs">
-      <%#= f.select :prices, ['Congrès 2 jours = 50 euros', 'Réduction pour les membres de 1Toit2Ages, étudiants, seniors +65 = 25 euros',' Cocktail (20/3) + Congrès et  dîner (21/3) = 160 euros', 'Cocktail (20/3) + Congrès et  dîner (21/3) = 180 euros', 'Congrès + dîner (21/3) = 170 euros', 'Congrès + dîner (21/3) = 180 euros']%>
+    <!-- Dietary est égal à prices2 -->
+    <div class="field form-font-size visible-xs">
       <% if Date.today > Date.parse("2019-1-20") %>
-        <%= f.select :prices, ['Cocktail (20/3) + Congrès et  dîner (21/3) = 180 € (membres uniquement) ', 'Congrès 2 jours = 50 €', 'Adhérents 1Toit2Ages, étudiants, seniors +65 = 25 €', 'Congrès + dîner (21/3) = 190 €'] %>
+      <%= f.select :dietary, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 180 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 190 €'] %>
       <% else %>
-        <%= f.select :prices, ['Cocktail (20/3) + Congrès et  dîner (21/3) = 160 € (membres uniquement) ', 'Congrès 2 jours = 50 €', 'Adhérents 1Toit2Ages, étudiants, seniors +65 = 25 €', 'Congrès + dîner (21/3) = 170 €'] %>
+      <%= f.select :dietary, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 160 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 170 €'] %>
       <% end %>
-    </div> -->
+    </div>
+
     <p>&nbsp;</p>
     <b><p>Adresse de facturation (si différente) </p></b>
     <div class="field">

@@ -3,7 +3,12 @@
 <p class="x_MsoNormal"><em>Merci pour votre inscription au 6<sup>&egrave;me</sup>&nbsp;Congr&egrave;s du Logement Interg&eacute;n&eacute;rationnel qui se d&eacute;roulera les 21 et 22 mars 2019 &agrave; Bruxelles.</em></p>
 <p class="x_MsoNormal"><em>Votre participation sera confirm&eacute;e apr&egrave;s r&eacute;ception de votre paiement.</em></p>
 <p class="x_MsoNormal">&nbsp;</p>
+
+<% if @user.dietary != "Congress and cocktail (20/3) + Gala Diner (21/3)  = 160 € (members only) "%>
+<% @user.prices = @user.dietary %>
+<% end %>
 <p><em><%= @user.first_name %>, vous avez choisi l'option : <%= @user.prices %></em></p>
+
 <p>&nbsp;</p>
 <p>Paiement</p>
 <p><em>Merci pour votre paiement sur le compte de l&rsquo;ASBL :</em></p>
