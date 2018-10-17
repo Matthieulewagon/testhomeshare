@@ -55,3 +55,15 @@
   font-size: 34px;
   color: #16843a;
 }
+
+.photogroupe-img {
+  background-image: image-url('photogroupe.jpg');
+  background-size: cover;
+}
+
+.photogroupe-img-height {
+  height: 250px;
+
+  margin-left: auto;
+  margin-right: auto;
+}

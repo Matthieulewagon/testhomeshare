@@ -81,16 +81,16 @@
 <!--    <p>R&eacute;duction pour les membres de 1toit2ages, &eacute;tudiants, seniors +65 = 25 euros</p>-->
 <!--    <p>&nbsp;</p>-->
     <p class="font-size-welcome-intertitle">Membres du Réseau Homeshare International</p>
-    <p>&bull; Cocktail Grand-Place (20/3) + Congr&egrave;s + d&icirc;ner de gala (21/3) = <b>160 €</b> (180 € pour toute inscription <u>après le 20 janvier 2019 23:59</u>)</p>
-    <p>&bull; Congr&egrave;s 2 jours = <b>50 €</b></p>
+    <p>&bull; Cocktail Grand-Place (20/3) + Congr&egrave;s 2 jours + d&icirc;ner de gala (21/3) = <b>160 €</b> (180 € pour toute inscription <u>après le 20 janvier 2019 23:59</u>)</p>
+    <p>&bull; Congr&egrave;s 2 jours = <b>50 €</b> (restauration et documents compris)</p>
     <p>Si vous souhaitez devenir membre du Réseau de Homeshare International, merci de vous inscrire en ligne <a class="pink-register" href="http://www.emailmeform.com/builder/form/5dUxK0sT67N47jY2c" target="_blank">ici</a> ou de compléter le formulaire suivant <a class="pink-register" href="https://homeshare.org/wp-content/uploads/HI-Network-application-form-1.pdf" target="_blank">HI Network application form</a>.</p>
     <p>Plus d’informations: <a class="pink-register" href="https://homeshare.org/network/" target="_blank" rel="noopener noreferrer">https://homeshare.org/network/</a></p>
     <p>&nbsp;</p>
     <p class="font-size-welcome-intertitle">Non membres du Réseau Homeshare International</p>
-    <p>&bull; Congr&egrave;s + d&icirc;ner de gala (21/3) = <b>170 €</b> (190 € pour toute inscription <u>après le 20 janvier 2019  23:59</u>)</p>
+    <p>&bull; Congr&egrave;s 2 jours + d&icirc;ner de gala (21/3) = <b>170 €</b> (190 € pour toute inscription <u>après le 20 janvier 2019  23:59</u>)</p>
 <!--    <p>Si vous &ecirc;tes accompagn&eacute;, cette personne est la bienvenue au dîner de Gala du 21 mars. Sa participation à la soirée sera de 50 euros (à payer lors de l'inscription).</p>-->
-      <p>&bull; Congr&egrave;s 2 jours = <b>50 €</b></p>
-      <p>&bull; Congr&egrave;s 2 jours : Adhérents 1toit2ages, seniors+65, étudiants = <b>25 €</b></p>
+      <p>&bull; Congr&egrave;s 2 jours = <b>50 €</b> (restauration et documents compris)</p>
+      <p>&bull; Congr&egrave;s 2 jours : Adhérents 1toit2ages, seniors+65, étudiants = <b>25 €</b> (restauration et documents compris)</p>
     <p>&nbsp;</p>
 
 
@@ -105,9 +105,9 @@
 
     <div class="field hidden-xs">
       <% if Date.today > Date.parse("2019-1-20") %>
-      <%= f.select :prices, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 180 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 190 €'] %>
+      <%= f.select :prices, ['Cocktail (20/3) + Congrès 2 jours + Gala Diner (21/3)  = 180 € (membres de HI) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 190 €'] %>
       <% else %>
-      <%= f.select :prices, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 160 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 170 €'] %>
+      <%= f.select :prices, ['Cocktail (20/3) + Congrès 2 jours + Gala Diner (21/3)  = 160 € (membres de HI) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 170 €'] %>
       <% end %>
     </div>
     <!-- Dietary est égal à prices2 -->
