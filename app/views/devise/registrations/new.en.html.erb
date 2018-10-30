@@ -107,17 +107,17 @@
     <p>Click the drop down menu to make your selection :</p>
     <div class="field hidden-xs">
       <% if Date.today > Date.parse("2019-1-20") %>
-      <%= f.select :prices, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 180 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 190 €'] %>
+      <%= f.select :prices, ['Congress (20/3) + Congress + Gala Diner (21/3)  = 180 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 190 €'] %>
       <% else %>
-      <%= f.select :prices, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 160 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 170 €'] %>
+      <%= f.select :prices, ['Congress (20/3) + Congress + Gala Diner (21/3)  = 160 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 170 €'] %>
       <% end %>
     </div>
     <!-- Dietary est égal à prices2 -->
     <div class="field form-font-size visible-xs">
       <% if Date.today > Date.parse("2019-1-20") %>
-      <%= f.select :dietary, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 180 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 190 €'] %>
+      <%= f.select :dietary, ['Congress (20/3) + Congress + Gala Diner (21/3)  = 180 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 190 €'] %>
       <% else %>
-      <%= f.select :dietary, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 160 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 170 €'] %>
+      <%= f.select :dietary, ['Congress (20/3) + Congress + Gala Diner (21/3)  = 160 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 170 €'] %>
       <% end %>
     </div>
 
