@@ -1,7 +1,7 @@
 <p>Voici les informations :</p>
 <p><%= @user.first_name %> <%= @user.last_name %></p>
 
-<% if @user.dietary != "Congress and cocktail (20/3) + Gala Diner (21/3)  = 160 € (members only) "%>
+<% if @user.dietary != "Cocktail (20/3) + Congress + Gala Diner (21/3)  = 160 € (members only) "%>
 <% @user.prices = @user.dietary %>
 <% end %>
 <p><em>inscrit à : <%= @user.prices %></em></p>

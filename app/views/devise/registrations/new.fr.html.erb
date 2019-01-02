@@ -115,7 +115,7 @@
       <% if Date.today > Date.parse("2019-1-20") %>
       <%= f.select :dietary, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 180 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 190 €'] %>
       <% else %>
-      <%= f.select :dietary, ['Congress and cocktail (20/3) + Gala Diner (21/3)  = 160 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 170 €'] %>
+      <%= f.select :dietary, ['Cocktail (20/3) + Congress + Gala Diner (21/3)  = 160 € (members only) ', 'Full Congress = 50 €', 'Members of 1Toit2Ages, students, seniors = 25 €', 'Full Congress + Gala Diner (21/3) = 170 €'] %>
       <% end %>
     </div>
 
