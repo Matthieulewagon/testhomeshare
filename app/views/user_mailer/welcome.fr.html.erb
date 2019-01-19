@@ -4,7 +4,7 @@
 <p class="x_MsoNormal"><em>Votre participation sera confirm&eacute;e apr&egrave;s r&eacute;ception de votre paiement.</em></p>
 <p class="x_MsoNormal">&nbsp;</p>
 
-<% if @user.dietary != "Cocktail (20/3) + Congress + Gala Diner (21/3)  = 160 € (members only) "%>
+<% if @user.dietary != "Cocktail (20/3) + Congress + Gala Diner (21/3)  = 180 € (members only) "%>
 <% @user.prices = @user.dietary %>
 <% end %>
 <p><em><%= @user.first_name %>, vous avez choisi l'option : <%= @user.prices %></em></p>
